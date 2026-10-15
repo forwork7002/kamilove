@@ -3,948 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kamilove — yuz va tana uchun tabiiy parvarish | 2 ta oling, 3-chisi sovgʻa</title>
-<meta name="description" content="Kamilove: yuvinish geli, mitsellyar suv, gialuron serum, sentella kremi va 100% tabiiy shakar skrablar. 2 ta olsangiz, 3-chisi sovgʻa. Toʻlov mahsulotni olganda. Tel: +998 90 500 46 56.">
+<title>Kamilove — sayt dizayn variantlari</title>
+<meta name="description" content="Kamilove sotuv sahifasining 4 xil dizayni: Ink & Pastel, Bir ustun, Noir Marble, Pastel Bento.">
+<meta name="robots" content="noindex">
 <meta name="theme-color" content="#FFFFFF">
-<meta property="og:title" content="Kamilove — 2 ta oling, 3-chisi sovgʻa">
-<meta property="og:description" content="Yuz va tana uchun tabiiy parvarish. Yetkazib berish BTS orqali, toʻlov olganda.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://forwork7002.github.io/kamilove/img/hero.webp">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27%23151416%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-size=%2734%27 text-anchor=%27middle%27 fill=%27%23DDEFEA%27 font-family=%27Arial%27 font-weight=%27700%27%3EK%3C/text%3E%3C/svg%3E">
-<link rel="preload" as="image" href="img/hero.webp" imagesrcset="img/hero-s.webp 640w, img/hero.webp 1200w" imagesizes="(min-width:900px) 50vw, 100vw" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Caveat:wght@700&text=Love%20yourself!&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Caveat:wght@700&text=Love%20yourself!&display=swap"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&text=Love%20yourself!&display=swap" rel="stylesheet">
 <style>
-/* Yo'nalish: "Ink & Pastel" — qadoqdagi qora-oq marmar + pastel yorliqlar. Toza, halol, sotuvchi. */
 :root{
-  --paper:#FFFFFF;
-  --bone:#F5F4F1;
-  --bone-2:#ECEAE5;
-  --ink:#151416;
-  --ink-2:#2B292D;
-  --muted:#5F5B62;
-  --line:#E6E3E6;
-  --mint:#E4F2EE;
-  --mint-2:#C4E2D9;
-  --love:#C2366A;
-  --love-dk:#A12755;
-  --love-bg:#FBE8EF;
-  --ok:#127A49;
-  --ok-bg:#E7F5EE;
-  --danger:#B42318;
-  --danger-bg:#FDECEA;
-
-  --r-sm:10px; --r-md:14px; --r-lg:20px; --r-xl:28px;
-  --sh-1:0 1px 2px rgba(21,20,22,.05),0 6px 16px -10px rgba(21,20,22,.18);
+  --paper:#FFFFFF; --bone:#F5F4F1; --ink:#151416; --ink-2:#2B292D; --muted:#5F5B62; --line:#E6E3E6;
+  --mint:#E4F2EE; --love:#C2366A;
+  --r-md:14px; --r-lg:20px; --r-xl:28px;
   --sh-2:0 2px 6px rgba(21,20,22,.04),0 28px 56px -32px rgba(21,20,22,.38);
-  --ease:cubic-bezier(.2,.7,.2,1);
-  --wrap:1160px;
   --script:'Caveat','Segoe Script',cursive;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3{line-height:1.1;letter-spacing:-.02em;text-wrap:balance}
-p{text-wrap:pretty}
+body{font-family:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bone);color:var(--ink);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:3px solid var(--love);outline-offset:3px;border-radius:8px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 16px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 16px}
 @media(min-width:700px){.wrap{padding:0 24px}}
-.num{font-variant-numeric:tabular-nums}
-.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
-/* Ink marble — qadoqdagi naqsh: chiziqlar + turbulence siljitish (SVG, tashqi fayl kerak emas) */
-.marble{background-color:#fff;background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201440%20960'%20preserveAspectRatio='xMidYMid%20slice'%3E%3Cdefs%3E%3Cpattern%20id='s'%20width='60'%20height='1600'%20patternUnits='userSpaceOnUse'%20patternTransform='rotate%2828%29'%3E%3Crect%20width='60'%20height='1600'%20fill='%23fff'/%3E%3Crect%20x='2'%20width='22'%20height='1600'%20fill='%23151416'/%3E%3Crect%20x='32'%20width='2'%20height='1600'%20fill='%23151416'/%3E%3Crect%20x='40'%20width='4'%20height='1600'%20fill='%23151416'/%3E%3Crect%20x='52'%20width='1.5'%20height='1600'%20fill='%23151416'/%3E%3C/pattern%3E%3Cfilter%20id='f'%20x='-20%25'%20y='-20%25'%20width='140%25'%20height='140%25'%20color-interpolation-filters='sRGB'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='.005'%20numOctaves='4'%20seed='12'/%3E%3CfeDisplacementMap%20in='SourceGraphic'%20scale='340'%20xChannelSelector='R'%20yChannelSelector='G'/%3E%3C/filter%3E%3C/defs%3E%3Crect%20x='-200'%20y='-200'%20width='1840'%20height='1360'%20fill='url%28%23s%29'%20filter='url%28%23f%29'/%3E%3C/svg%3E");background-size:cover;background-position:center}
-
-/* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:var(--r-md);background:var(--ink);color:#fff;font-weight:700;font-size:17px;transition:background .18s,transform .12s,box-shadow .18s;white-space:nowrap}
-.btn:hover{background:var(--ink-2);box-shadow:var(--sh-1)}
-.btn:active{transform:scale(.985)}
-.btn.block{display:flex;width:100%}
-.btn.line{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
-.btn.line:hover{box-shadow:inset 0 0 0 1.5px var(--ink)}
-.btn.love{background:var(--love)}
-.btn.love:hover{background:var(--love-dk)}
-.btn svg{width:20px;height:20px;flex:none}
-
-/* Top strip + header */
-.strip{background:var(--ink);color:#fff;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
-.strip b{font-weight:700;color:var(--mint-2)}
-.strip .s-long{display:none}
-@media(min-width:700px){.strip .s-short{display:none}.strip .s-long{display:inline}}
-.head{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
-@supports(backdrop-filter:blur(8px)){.head{background:rgba(255,255,255,.86);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3)}}
-.head .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.logo{display:inline-flex;align-items:center;gap:10px}
+header{padding:40px 0 28px}
+.logo{display:inline-flex;align-items:center;gap:10px;margin-bottom:24px}
 .logo .mk{font-weight:800;font-size:17px;line-height:.92;letter-spacing:.06em}
 .logo .tg{font-family:var(--script);font-weight:700;font-size:20px;line-height:1;color:var(--muted);transform:rotate(-6deg);margin-top:6px}
-.nav{display:none;gap:26px;font-weight:600;font-size:15px;color:var(--muted)}
-.nav a{padding:6px 0;transition:color .15s}
-.nav a:hover{color:var(--ink)}
-.head-phone{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
-.head-phone i{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--mint);color:var(--ink);font-style:normal}
-.head-phone i svg{width:18px;height:18px}
-.head-phone span small{display:block;font-size:12px;font-weight:500;color:var(--muted);line-height:1.2}
-.head-phone span{line-height:1.25}
-@media(min-width:960px){.nav{display:flex}}
-@media(max-width:420px){.head-phone span small{display:none}.head-phone{font-size:14px;gap:8px}.logo .tg{display:none}}
+h1{font-size:clamp(31px,5.4vw,49px);font-weight:800;line-height:1.08;letter-spacing:-.02em;max-width:760px;text-wrap:balance}
+.lead{margin-top:12px;color:var(--muted);font-size:17px;max-width:640px}
+.note{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:14px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:6px 14px}
+.note::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--love)}
 
-/* Hero */
-.hero{padding:16px 0 48px}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
-.hero-pic{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:6/5;background:var(--mint)}
-.hero-pic img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
-.hero-pic .stamp{position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);border-radius:999px;padding:6px 14px 6px 6px;font-size:13px;font-weight:700;box-shadow:var(--sh-1)}
-.hero-pic .stamp img{width:32px;height:32px;border-radius:50%;object-fit:contain;background:var(--mint);padding:2px}
-.kick{font-family:var(--script);font-weight:700;font-size:26px;line-height:1;color:var(--love);margin-bottom:8px;display:inline-block;transform:rotate(-3deg);transform-origin:left}
-.hero h1{font-size:clamp(31px,6.2vw,52px);font-weight:800}
-.hero-lead{margin-top:12px;font-size:17px;color:var(--muted);max-width:540px}
-.checks{list-style:none;display:grid;gap:10px;margin-top:20px}
-.checks li{display:flex;align-items:flex-start;gap:10px;font-weight:600;font-size:15.5px}
-.checks svg{flex:none;width:22px;height:22px;color:var(--ok);margin-top:1px}
-@media(min-width:900px){
-  .hero{padding:40px 0 72px}
-  .hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
-  .hero-pic{aspect-ratio:4/5}
-}
-
-/* Offer card — the one bold element */
-.offer{margin-top:24px;border-radius:var(--r-lg);background:var(--mint);padding:20px 18px 18px;border:1.5px solid var(--mint-2)}
-.offer-title{font-weight:800;font-size:22px;line-height:1.2}
-.offer-sub{font-size:14px;color:var(--muted);margin-top:4px}
-.tubes{display:flex;align-items:flex-start;justify-content:space-between;gap:4px;margin:18px 0 16px}
-.tubes .op{flex:none;align-self:center;margin-top:-26px;font-weight:800;font-size:20px;color:var(--muted)}
-.tube{flex:1;min-width:0;max-width:108px;text-align:center}
-.tube .ph{position:relative;display:block;aspect-ratio:1;border-radius:50%;overflow:visible;background:#fff;box-shadow:0 0 0 3px #fff}
-.tube .ph img{position:absolute;inset:10%;width:80%;height:80%;object-fit:contain;filter:drop-shadow(0 6px 8px rgba(21,20,22,.18))}
-.tube b{display:block;margin-top:8px;font-size:clamp(12.5px,3.6vw,14.5px);font-weight:700;white-space:nowrap}
-.tube small{display:block;font-size:12px;color:var(--muted);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tube.gift .ph{box-shadow:0 0 0 3px var(--love)}
-.tube.gift b{color:var(--love)}
-.tube .ribbon{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);background:var(--love);color:#fff;font-size:clamp(10px,2.9vw,11.5px);font-weight:800;padding:3px 9px;border-radius:999px;white-space:nowrap;animation:ribbon .6s .5s cubic-bezier(.2,1.5,.3,1) both}
-@keyframes ribbon{from{transform:translateX(-50%) scale(.3);opacity:0}to{transform:translateX(-50%) scale(1);opacity:1}}
-.price-row{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px;padding-top:14px;border-top:1.5px dashed rgba(21,20,22,.18)}
-.price-row .lbl{width:100%;font-size:14px;color:var(--muted);font-weight:600}
-.price-row s{font-size:18px;color:var(--muted);font-weight:600}
-.price-row strong{font-size:32px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
-.price-row .save{font-size:13px;font-weight:800;color:#fff;background:var(--love);padding:3px 9px;border-radius:8px;align-self:center}
-.offer .btn{margin-top:16px}
-.offer-note{margin-top:10px;font-size:13.5px;color:var(--muted);text-align:center}
-
-/* Sections */
-.sec{padding:56px 0}
-.sec.tint{background:var(--bone)}
-.sec-h{max-width:660px;margin-bottom:28px}
-.sec-h .eyebrow{display:block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-.sec-h h2{font-size:clamp(26px,4.4vw,39px);font-weight:800}
-.sec-h p{margin-top:10px;color:var(--muted);font-size:16.5px}
-.sec-h.center{margin-left:auto;margin-right:auto;text-align:center}
-@media(min-width:900px){.sec{padding:88px 0}.sec-h{margin-bottom:40px}}
-
-/* Reveal (faqat JS ishlaganda) */
-.js .rv{opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
-.js .rv.in{opacity:1;transform:none}
-
-/* Catalog */
-.tabs{display:flex;gap:6px;margin:-8px 0 20px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
-.tabs::-webkit-scrollbar{display:none}
-.tab{flex:none;min-height:44px;padding:0 14px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-weight:700;font-size:15px;color:var(--muted);transition:background .15s,color .15s,border-color .15s}
-.tab:hover{border-color:var(--ink);color:var(--ink)}
-.tab[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
-.tab span{font-weight:600;opacity:.65;margin-left:4px}
-@media(max-width:420px){.tab{padding:0 11px;font-size:14.5px}}
-.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-@media(min-width:760px){.cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
-.card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:#fff;transition:box-shadow .2s,transform .2s}
-.card[hidden]{display:none}
-@media(hover:hover){.card:hover,.js .card.rv.in:hover{box-shadow:var(--sh-2);transform:translateY(-2px)}}
-.card .ph{position:relative;aspect-ratio:1;background:var(--tint);display:grid;place-items:center;overflow:hidden}
-.card .ph img{width:76%;height:82%;object-fit:contain;filter:drop-shadow(0 14px 16px rgba(21,20,22,.2));transition:transform .35s var(--ease)}
-@media(hover:hover){.card:hover .ph img{transform:scale(1.04)}}
-.card .vol{position:absolute;left:10px;top:10px;font-size:12px;font-weight:700;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.85)}
-.card .cnt{position:absolute;right:10px;bottom:10px;font-size:12px;font-weight:800;padding:4px 9px;border-radius:999px;background:var(--ok);color:#fff}
-.card .cnt[hidden]{display:none}
-.card .info{display:flex;flex-direction:column;gap:2px;padding:12px;flex:1}
-.card .lab{font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);line-height:1.3}
-.card h3{font-size:17px;font-weight:700;letter-spacing:-.01em;margin-top:2px}
-.card .info p{font-size:13.5px;color:var(--muted);line-height:1.45;flex:1;margin-top:4px}
-.card .pr{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-top:10px}
-.card .pr b{font-size:18px;font-weight:800;letter-spacing:-.01em}
-.card .btn{min-height:44px;font-size:15px;border-radius:var(--r-sm);margin-top:10px;padding:0 10px}
-@media(max-width:420px){.card .info p{display:none}.card h3{font-size:15.5px}.card .pr b{font-size:16px}}
-@media(min-width:760px){.card .info{padding:16px}}
-
-/* Routine (face / body) */
-.rt{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
-.rt-pic{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;background:var(--mint)}
-.rt-pic img{width:100%;height:100%;object-fit:cover}
-@media(min-width:600px) and (max-width:899px){.rt-pic{aspect-ratio:4/3}}
-.rt-pic .badge{position:absolute;right:12px;top:12px;background:#fff;border-radius:var(--r-md);padding:10px 12px;box-shadow:var(--sh-1);font-size:13px;font-weight:600;line-height:1.3;max-width:62%}
-.rt-pic .badge b{display:block;font-size:15px}
-@media(min-width:900px){.rt{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}.rt.flip .rt-pic{order:2}}
-.stepl{list-style:none;display:grid;gap:10px;counter-reset:rs}
-.stepl li{counter-increment:rs;display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:10px 14px 10px 10px}
-.stepl .th{position:relative;width:72px;height:72px;border-radius:12px;background:var(--tint);display:grid;place-items:center}
-.stepl .th img{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);object-fit:contain}
-.stepl .th::before{content:counter(rs);position:absolute;left:-6px;top:-6px;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;font-size:12.5px;font-weight:800;display:grid;place-items:center}
-.stepl b{display:block;font-size:16.5px;font-weight:700}
-.stepl em{display:block;font-style:normal;font-size:13px;font-weight:600;color:var(--muted);margin-top:1px}
-.stepl span{display:block;font-size:14.5px;color:var(--muted);margin-top:4px;line-height:1.45}
-.kit{margin-top:18px;display:grid;gap:12px;padding:16px;border-radius:var(--r-md);background:var(--love-bg)}
-.kit .kp{min-width:0}
-.kit .kp small{display:block;font-size:13.5px;color:var(--muted);font-weight:600}
-.kit .kp s{color:var(--muted);font-weight:600;margin-right:6px}
-.kit .kp b{font-size:22px;font-weight:800;letter-spacing:-.01em}
-
-/* Brand band */
-.brand{position:relative;padding:56px 0}
-.brand .lbl-card{position:relative;max-width:900px;margin:0 auto;background:#fff;border-radius:var(--r-xl);padding:28px 20px;box-shadow:var(--sh-2);text-align:center}
-.brand .lbl-card .scr{font-family:var(--script);font-weight:700;font-size:30px;color:var(--love);line-height:1;display:inline-block;transform:rotate(-4deg)}
-.brand h2{font-size:clamp(25px,4vw,36px);font-weight:800;margin-top:10px}
-.brand .lead{color:var(--muted);margin:10px auto 0;max-width:560px}
-.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:24px;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;text-align:left}
-.facts div{padding:16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-.facts div:nth-child(2n){border-right:0}
-.facts div:nth-last-child(-n+2){border-bottom:0}
-.facts b{display:block;font-size:20px;font-weight:800;letter-spacing:-.01em}
-.facts span{display:block;font-size:14px;color:var(--muted);margin-top:2px;line-height:1.35}
-@media(min-width:800px){.brand{padding:96px 0}.brand .lbl-card{padding:44px 40px}.facts{grid-template-columns:repeat(4,1fr)}.facts div{border-bottom:0}.facts div:nth-child(2n){border-right:1px solid var(--line)}.facts div:last-child{border-right:0}}
-
-/* Reels + photo strip */
-.reels,.strip-ph{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:16px;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -16px;padding:0 16px 6px}
-.reels::-webkit-scrollbar,.strip-ph::-webkit-scrollbar{display:none}
-.reel{position:relative;flex:0 0 58%;max-width:260px;aspect-ratio:9/16;border-radius:var(--r-lg);overflow:hidden;background:#1d1b1e;scroll-snap-align:start;cursor:pointer}
-.reel video{width:100%;height:100%;object-fit:cover;display:block}
-.reel .snd{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:rgba(0,0,0,.5);color:#fff;transition:opacity .2s}
-.reel .snd svg{width:26px;height:26px}
-.reel.playing .snd{opacity:0}
-.reel .cap{position:absolute;left:10px;right:10px;bottom:10px;color:#fff;font-weight:700;font-size:14px;text-shadow:0 1px 8px rgba(0,0,0,.55);pointer-events:none}
-.strip-ph{margin-top:20px}
-.strip-ph img{flex:0 0 42%;max-width:220px;min-width:0;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r-md);scroll-snap-align:start;background:var(--bone)}
-@media(min-width:700px){.reels,.strip-ph{margin:0 -24px;padding:0 24px 6px;scroll-padding-inline:24px}.reel{flex-basis:230px}.strip-ph img{flex-basis:180px}}
-@media(min-width:1210px){.reels,.strip-ph{margin:0;padding:0 0 6px;scroll-padding-inline:0}.reel{flex:1 1 0;max-width:none}.strip-ph img{flex:1 1 0;max-width:none}}
-
-/* Steps — real sequence */
-.steps{list-style:none;display:grid;gap:12px;counter-reset:st}
-.steps li{counter-increment:st;display:grid;grid-template-columns:44px 1fr;gap:4px 14px;align-items:start;background:#fff;border-radius:var(--r-md);padding:16px}
-.steps li::before{content:counter(st);grid-row:span 2;width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800;font-size:18px}
-.steps b{font-size:16.5px;font-weight:700}
-.steps span{font-size:14.5px;color:var(--muted)}
-@media(min-width:900px){.steps{grid-template-columns:repeat(4,1fr);gap:16px}.steps li{grid-template-columns:1fr;padding:22px 20px}.steps li::before{grid-row:auto;margin-bottom:10px}}
-
-/* Order form */
-.order .wrap{max-width:720px}
-.form{border:1.5px solid var(--line);border-radius:var(--r-xl);padding:20px 16px;background:#fff;box-shadow:var(--sh-2)}
-@media(min-width:600px){.form{padding:28px}}
-.promo{display:flex;align-items:center;gap:12px;background:var(--love-bg);border-radius:var(--r-md);padding:12px 14px;margin-bottom:22px}
-.promo .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--love);color:#fff;display:grid;place-items:center}
-.promo .ic svg{width:22px;height:22px}
-.promo b{display:block;font-size:16px;line-height:1.25}
-.promo span{display:block;font-size:13.5px;color:var(--muted);margin-top:2px;line-height:1.35}
-.fstep{font-weight:800;font-size:17px;margin:4px 0 12px}
-.fstep small{display:block;font-weight:500;font-size:13.5px;color:var(--muted);margin-top:2px}
-.ftabs{margin:0 0 12px}
-.picks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-@media(max-width:359px){.picks{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.pick{min-width:0;border:1.5px solid var(--line);border-radius:var(--r-md);padding:6px 6px 8px;text-align:center;transition:border-color .15s,background .15s}
-.pick[hidden]{display:none}
-.pick.on{border-color:var(--ink);background:var(--bone)}
-.pick .ph{position:relative;display:grid;place-items:center;width:100%;aspect-ratio:1;border-radius:10px;overflow:hidden;background:var(--tint)}
-.pick .ph img{width:74%;height:84%;object-fit:contain}
-.pick .nm{display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;margin-top:6px;line-height:1.2;min-height:2.4em}
-.pick .pp{display:block;font-size:12.5px;color:var(--muted);font-weight:600}
-.qty{display:flex;align-items:center;justify-content:space-between;margin-top:6px;background:var(--bone);border-radius:10px;padding:3px}
-.qty button{width:34px;height:34px;border-radius:8px;display:grid;place-items:center;font-size:20px;font-weight:600;line-height:1;color:var(--ink)}
-.qty button:hover{background:#fff}
-.qty button[disabled]{opacity:.3;cursor:default;background:none}
-.qty .plus{background:#fff}
-.pick.on .qty .plus{background:var(--ink);color:#fff}
-.qty output{font-weight:800;font-size:15px;min-width:20px}
-.bump{animation:bump .3s ease}
-@keyframes bump{50%{transform:scale(1.05)}}
-.giftbox{margin-top:16px;border:1.5px dashed var(--love);border-radius:var(--r-md);padding:14px;background:#FFF8FA}
-.giftbox[hidden]{display:none}
-.giftbox .fstep{margin:0 0 10px;font-size:15.5px}
-.chips{display:flex;flex-wrap:wrap;gap:7px}
-.chip{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:4px 14px 4px 4px;border-radius:999px;background:#fff;border:1.5px solid var(--line);font-weight:600;font-size:13.5px}
-.chip img{width:30px;height:30px;border-radius:50%;object-fit:contain;background:var(--tint)}
-.chip[aria-pressed="true"]{border-color:var(--love);background:var(--love);color:#fff}
-.lockhint{margin-top:14px;font-size:14px;font-weight:600;background:var(--bone);border-radius:12px;padding:10px 12px;text-align:center}
-.lockhint[hidden]{display:none}
-.lockhint b{color:var(--love)}
-.field{margin-top:12px}
-.field label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
-.field input{width:100%;height:54px;padding:0 16px;border-radius:12px;border:1.5px solid #D9D5DA;background:#fff;font:inherit;font-size:17px;color:var(--ink);transition:border-color .15s,box-shadow .15s}
-.field input::placeholder{color:#A39FA6}
-.field input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 4px rgba(21,20,22,.1)}
-.field input.bad{border-color:var(--danger);box-shadow:0 0 0 4px rgba(180,35,24,.1)}
-.sum{margin-top:18px;border-top:1px solid var(--line);padding-top:12px;font-size:15px}
-.sum div{display:flex;justify-content:space-between;gap:12px;padding:4px 0;color:var(--muted)}
-.sum div b{color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
-.sum .free b{color:var(--ok)}
-.sum .free span{color:var(--ok);font-weight:700}
-.sum .total{padding-top:10px;margin-top:6px;border-top:1px dashed var(--line);color:var(--ink);font-weight:700;align-items:baseline}
-.sum .total b{font-size:26px;font-weight:800;letter-spacing:-.02em}
-.sum .empty{justify-content:center;color:var(--muted);font-size:14.5px;padding:6px 0}
-.err{display:none;margin-top:12px;background:var(--danger-bg);color:var(--danger);border:1.5px solid rgba(180,35,24,.3);border-radius:12px;padding:10px 14px;font-size:14.5px;font-weight:600}
-.err.on{display:block}
-.form .send{margin-top:14px;min-height:58px;font-size:18px}
-.form .send[disabled]{opacity:.7;cursor:wait}
-.fine{margin-top:12px;font-size:13.5px;color:var(--muted);text-align:center;line-height:1.45}
-.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.done{display:none;text-align:center;padding:10px 4px}
-.done .okic{width:64px;height:64px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;margin:0 auto 14px}
-.done .okic svg{width:32px;height:32px}
-.done h3{font-size:24px;font-weight:800}
-.done p{color:var(--muted);margin-top:6px}
-.done p b{white-space:nowrap;color:var(--ink)}
-.oklist{list-style:none;display:grid;gap:6px;margin:16px auto 0;max-width:360px;text-align:left}
-.oklist li{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:12px;background:var(--bone);font-weight:600;font-size:14.5px}
-.oklist li img{width:28px;height:28px;object-fit:contain;flex:none}
-.oklist li em{margin-left:auto;font-style:normal;font-weight:800;white-space:nowrap}
-.oklist li em.g{color:var(--ok)}
-.form.sent .fields{display:none}.form.sent .done{display:block}
-.again{margin-top:16px;min-height:44px;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
-
-/* FAQ */
-.faq .wrap{max-width:800px}
-.faq details{border-bottom:1px solid var(--line)}
-.faq details:first-of-type{border-top:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-weight:700;font-size:17px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"";flex:none;width:12px;height:12px;border-right:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:rotate(45deg) translate(-3px,-3px);transition:transform .2s}
-.faq details[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}
-.faq details p{padding:0 0 18px;color:var(--muted);font-size:15.5px;max-width:700px}
-
-/* Contact + footer */
-.contact{text-align:center}
-.contact .btn{margin-top:20px}
-footer{background:var(--ink);color:rgba(255,255,255,.75);font-size:14px;padding:36px 0 32px}
-footer .wrap{display:grid;gap:16px}
-footer .logo .tg{color:rgba(255,255,255,.6)}
-footer .logo .mk{color:#fff}
-footer a{color:#fff;font-weight:700}
-footer p{line-height:1.55}
-@media(min-width:800px){footer .wrap{grid-template-columns:1fr auto;align-items:center}footer .right{text-align:right}}
-
-/* Mobile bottom bar */
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);transition:transform .25s,visibility .25s}
-.bar.hide{transform:translateY(110%);visibility:hidden}
-@media(max-width:360px){.bar .btn:not(.call){padding:0 14px}}
-.bar .btn{flex:1;min-height:52px}
-.bar .call{flex:none;width:56px;padding:0;background:var(--ok)}
-.bar .call:hover{background:#0E6239}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:76px}}
-
-/* Toast */
-.toast{position:fixed;left:50%;bottom:92px;z-index:60;transform:translate(-50%,20px);opacity:0;pointer-events:none;display:flex;align-items:center;gap:12px;background:var(--ink);color:#fff;border-radius:var(--r-md);padding:10px 10px 10px 16px;font-size:14.5px;font-weight:600;box-shadow:0 18px 40px -16px rgba(0,0,0,.5);transition:opacity .2s,transform .2s,visibility .2s;visibility:hidden;width:max-content;max-width:calc(100% - 24px)}
-.toast.on{opacity:1;transform:translate(-50%,0);pointer-events:auto;visibility:visible}
-.toast a{flex:none;background:#fff;color:var(--ink);border-radius:10px;padding:8px 12px;font-weight:700;font-size:14px}
-@media(min-width:900px){.toast{bottom:28px}}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;padding-bottom:56px}
+@media(min-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}}
+.var{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r-xl);overflow:hidden;transition:box-shadow .2s,transform .2s}
+@media(hover:hover){.var:hover{box-shadow:var(--sh-2);transform:translateY(-2px)}}
+.shot{position:relative;aspect-ratio:16/10;background:var(--tone,var(--mint));overflow:hidden}
+.shot .desk{position:absolute;left:6%;top:9%;width:78%;height:auto;border-radius:10px;box-shadow:0 18px 40px -20px rgba(21,20,22,.45);background:#fff}
+.shot .phone{position:absolute;right:5%;bottom:-14%;width:26%;height:auto;border-radius:16px;box-shadow:0 0 0 5px var(--ink),0 18px 40px -16px rgba(21,20,22,.5);background:#fff}
+.shot .tag{position:absolute;z-index:2;left:12px;top:12px;font-size:12px;font-weight:800;letter-spacing:.06em;background:var(--ink);color:#fff;border-radius:999px;padding:4px 10px}
+.body{display:flex;flex-direction:column;gap:6px;padding:18px 18px 20px;flex:1}
+.body h2{font-size:22px;font-weight:800;letter-spacing:-.01em}
+.body .kw{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.body p{color:var(--muted);font-size:15px;flex:1}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:var(--r-md);background:var(--ink);color:#fff;font-weight:700;font-size:16px;transition:background .18s}
+.btn:hover{background:var(--ink-2)}
+.btn svg{width:18px;height:18px}
+.btn.line{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn.line:hover{box-shadow:inset 0 0 0 1.5px var(--ink)}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+footer{border-top:1px solid var(--line);padding:24px 0 32px;color:var(--muted);font-size:14px}
 </style>
 </head>
 <body>
+<header class="wrap">
+  <div class="logo"><span class="mk">KAMI<br>LOVE</span><span class="tg">Love yourself!</span></div>
+  <h1>Sotuv sahifasining 4 xil dizayni</h1>
+  <p class="lead">Mahsulotlar, narxlar, 2+1 aksiya va buyurtma formasi hamma variantda bir xil — farqi faqat koʻrinishda. Yoqqanini oching va telefonda ham tekshirib koʻring.</p>
+  <span class="note">Koʻrish nusxasi: bu sahifalardan buyurtma yuborilmaydi</span>
+</header>
 
-<div class="strip"><span class="s-short">Oldindan toʻlov yoʻq — <b>olganda toʻlaysiz</b></span><span class="s-long">Toʻlov — mahsulotni <b>qoʻlingizga olganda</b>. Yetkazib berish BTS orqali, 2–4 kun.</span></div>
-
-<header class="head"><div class="wrap">
-  <a href="#" class="logo"><span class="mk">KAMI<br>LOVE</span><span class="tg">Love yourself!</span></a>
-  <nav class="nav" aria-label="Boʻlimlar">
-    <a href="#mahsulotlar">Mahsulotlar</a><a href="#yuz">Yuz uchun</a><a href="#tana">Tana uchun</a><a href="#video">Videolar</a><a href="#savollar">Savollar</a>
-  </nav>
-  <a class="head-phone" href="tel:+998905004656">
-    <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></i>
-    <span>+998 90 500 46 56<small>Har kuni qoʻngʻiroq qiling</small></span>
-  </a>
-</div></header>
-
-<main>
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-pic">
-      <img src="img/hero.webp" srcset="img/hero-s.webp 640w, img/hero.webp 1200w" sizes="(min-width:900px) 50vw, 100vw" alt="Kamilove yuvinish geli bilan qiz" width="1200" height="1600" fetchpriority="high">
-      <span class="stamp"><img src="img/p-gel-s.webp" alt="" width="32" height="32">Gentle Foaming Cleansing Gel</span>
+<main class="wrap grid">
+  <article class="var" style="--tone:#E4F2EE">
+    <a class="shot" href="v1/"><span class="tag">v1</span>
+      <img class="desk" src="previews/v1-desk.webp" alt="1-variant kompyuterda" width="720" height="450" loading="lazy">
+      <img class="phone" src="previews/v1-mob.webp" alt="1-variant telefonda" width="300" height="608" loading="lazy"></a>
+    <div class="body">
+      <span class="kw">Toza · pastel · marmar</span>
+      <h2>Ink &amp; Pastel</h2>
+      <p>Oq fon, myatniy aksiya kartasi, qadoqdagi qora-oq marmar naqsh. Keng sahifa: katalog, yuz va tana toʻplamlari, videolar.</p>
+      <div class="acts"><a class="btn" href="v1/">Ochish<span class="sr">: Ink &amp; Pastel</span></a></div>
     </div>
-    <div>
-      <span class="kick">Love yourself!</span>
-      <h1>Kamilove — yuz va tana uchun tabiiy parvarish</h1>
-      <p class="hero-lead">Yuvinish geli, mitsellyar suv, gialuron serum, sentella kremi va 100% tabiiy shakar skrablar. Teringizga kerakli parvarishni tanlang.</p>
+  </article>
 
-      <div class="offer" id="offer">
-        <div class="offer-title" id="offerTitle">2 ta oling, 3-chisi sovgʻa</div>
-        <div class="offer-sub" id="offerSub">Istalgan mahsulotlardan — eng arzoni bepul</div>
-        <div class="tubes" id="tubes"></div>
-        <div class="price-row">
-          <span class="lbl" id="offerLbl">Masalan, 3 ta skrab</span>
-          <s class="num" id="offerOld">450 000 soʻm</s>
-          <strong class="num" id="offerNew">300 000 soʻm</strong>
-          <span class="save" id="offerSave">−33%</span>
-        </div>
-        <a href="#buyurtma" class="btn block">Buyurtma berish</a>
-        <p class="offer-note">Oldindan toʻlov yoʻq — mahsulotni olganda toʻlaysiz.</p>
-      </div>
-
-      <ul class="checks">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>Toʻlov mahsulotni olganda — naqd yoki karta</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>Butun Oʻzbekiston boʻylab BTS pochtasi orqali, 2–4 kun</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>Operator 15 daqiqada qoʻngʻiroq qilib, tanlashga yordam beradi</li>
-      </ul>
+  <article class="var" style="--tone:#DCE9E5">
+    <a class="shot" href="v2/"><span class="tag">v2</span>
+      <img class="desk" src="previews/v2-desk.webp" alt="2-variant kompyuterda" width="720" height="450" loading="lazy">
+      <img class="phone" src="previews/v2-mob.webp" alt="2-variant telefonda" width="300" height="608" loading="lazy"></a>
+    <div class="body">
+      <span class="kw">Tez · sodda · sotuvchi</span>
+      <h2>Bir ustun</h2>
+      <p>Telefon ekranidek tor bitta ustun, kompyuterda ham oʻrtada turadi. Narx jadvali, ixcham mahsulotlar va qisqa forma — Telegram/Instagram reklamasi uchun.</p>
+      <div class="acts"><a class="btn" href="v2/">Ochish<span class="sr">: Bir ustun</span></a></div>
     </div>
-  </div>
-</section>
+  </article>
 
-<section class="sec tint" id="mahsulotlar">
-  <div class="wrap">
-    <div class="sec-h rv"><span class="eyebrow">Katalog</span><h2>9 ta mahsulot — teringizga mosini tanlang</h2><p>Yoqqan mahsulotni «Tanlash» tugmasi bilan qoʻshing — u buyurtma formasiga tushadi. 3 ta va undan koʻp tanlasangiz, eng arzoni sovgʻa.</p></div>
-    <div class="tabs" role="group" aria-label="Mahsulot turi" id="tabs">
-      <button type="button" class="tab" data-f="all" aria-pressed="true">Hammasi<span>9</span></button>
-      <button type="button" class="tab" data-f="face" aria-pressed="false">Yuz uchun<span>5</span></button>
-      <button type="button" class="tab" data-f="body" aria-pressed="false">Tana uchun<span>4</span></button>
+  <article class="var" style="--tone:#2B292D">
+    <a class="shot" href="v3/"><span class="tag">v3</span>
+      <img class="desk" src="previews/v3-desk.webp" alt="3-variant kompyuterda" width="720" height="450" loading="lazy">
+      <img class="phone" src="previews/v3-mob.webp" alt="3-variant telefonda" width="300" height="608" loading="lazy"></a>
+    <div class="body">
+      <span class="kw">Qora · galereya · premium</span>
+      <h2>Noir Marble</h2>
+      <p>Toʻq fonda pastel mahsulotlar galereyadagidek ajralib turadi. Katta sarlavhalar, marmar tekstura, videolar markazda.</p>
+      <div class="acts"><a class="btn" href="v3/">Ochish<span class="sr">: Noir Marble</span></a></div>
     </div>
-    <div class="cards" id="cards"></div>
-  </div>
-</section>
+  </article>
 
-<section class="sec" id="yuz">
-  <div class="wrap rt">
-    <div class="rt-pic rv"><img src="img/gel-mirror.webp" alt="Kamilove yuvinish geli koʻzgu oldida" loading="lazy" width="1000" height="1333">
-      <span class="badge"><b>Ertalab va kechqurun</b>Oddiy 3 qadam</span></div>
-    <div class="rv">
-      <div class="sec-h" style="margin-bottom:22px"><span class="eyebrow">Yuz uchun</span><h2>Toza, nam, tiklangan teri — 3 qadamda</h2><p>Oddiy tartib: avval tozalaysiz, keyin namlaysiz, oxirida krem bilan yopasiz.</p></div>
-      <ol class="stepl" id="faceSteps"></ol>
-      <div class="kit">
-        <div class="kp"><small>Yuz toʻplami: gel + serum + krem (sovgʻa — buyurtmada 1 ta)</small><s class="num" id="kitFaceOld"></s><b class="num" id="kitFaceNew"></b></div>
-        <button type="button" class="btn love" data-kit="gel,serum,cream">Toʻplamni qoʻshish</button>
-      </div>
+  <article class="var" style="--tone:#F6DDE7">
+    <a class="shot" href="v4/"><span class="tag">v4</span>
+      <img class="desk" src="previews/v4-desk.webp" alt="4-variant kompyuterda" width="720" height="450" loading="lazy">
+      <img class="phone" src="previews/v4-mob.webp" alt="4-variant telefonda" width="300" height="608" loading="lazy"></a>
+    <div class="body">
+      <span class="kw">Rangli · bento · quvnoq</span>
+      <h2>Pastel Bento</h2>
+      <p>Yorliqlardagi ranglar — myatniy, pushti, shaftoli, sariq — katta kataklarda. Yorqin va yoshlarga mos, lekin tartibli.</p>
+      <div class="acts"><a class="btn" href="v4/">Ochish<span class="sr">: Pastel Bento</span></a></div>
     </div>
-  </div>
-</section>
-
-<section class="sec tint" id="tana">
-  <div class="wrap rt flip">
-    <div class="rt-pic rv"><img src="img/scrub-bath.webp" alt="Kamilove Body Scrub Cherry vannada" loading="lazy" width="960" height="1280">
-      <span class="badge"><b>100% natural</b>Qopqogʻida shunday yozilgan</span></div>
-    <div class="rv">
-      <div class="sec-h" style="margin-bottom:22px"><span class="eyebrow">Tana uchun</span><h2>Shakar skrab + vanilli sufle</h2><p>Antitsellyulit shakar skrablar moylar bilan: oʻlik hujayralarni olib tashlaydi, teri silliq va yumshoq boʻladi. Keyin sufle bilan oziqlantirasiz.</p></div>
-      <ol class="stepl" id="bodySteps"></ol>
-      <div class="kit">
-        <div class="kp"><small>Tana toʻplami: 2 ta skrab + sufle (sovgʻa — buyurtmada 1 ta)</small><s class="num" id="kitBodyOld"></s><b class="num" id="kitBodyNew"></b></div>
-        <button type="button" class="btn love" data-kit="cherry,citrus,vanilla">Toʻplamni qoʻshish</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="brand marble" aria-labelledby="brandH">
-  <div class="wrap">
-    <div class="lbl-card rv">
-      <span class="scr">Love yourself!</span>
-      <h2 id="brandH">Kamilove — tabiiy kosmetika brendi</h2>
-      <p class="lead">Rossiya brendi: tanlab olingan tabiiy faol moddalar, sintetik atir va mineral moylarsiz.</p>
-      <div class="facts">
-        <div><b>100%</b><span>tabiiy tarkibli skrablar</span></div>
-        <div><b>0%</b><span>sintetik atir</span></div>
-        <div><b>0%</b><span>mineral moylar</span></div>
-        <div><b>Cruelty-free</b><span>hayvonlarda sinalmagan</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="video">
-  <div class="wrap">
-    <div class="sec-h rv"><span class="eyebrow">Videolar</span><h2>Qanday ishlatiladi — videoda</h2><p>Videoni bosing — ovozi bilan oʻynaydi. Bir vaqtda faqat bittasi.</p></div>
-    <div class="reels" id="reels">
-      <div class="reel"><video preload="none" loop playsinline poster="reels/before-after.jpg" src="reels/before-after.mp4" aria-label="Skrabdan oldin va keyin"></video><span class="cap">Oldin / keyin</span><button type="button" class="snd" aria-label="Videoni koʻrish"></button></div>
-      <div class="reel"><video preload="none" loop playsinline poster="reels/scrub-apply.jpg" src="reels/scrub-apply.mp4" aria-label="Skrabni surtish"></video><span class="cap">Skrabni surtish</span><button type="button" class="snd" aria-label="Videoni koʻrish"></button></div>
-      <div class="reel"><video preload="none" loop playsinline poster="reels/scrub-jar.jpg" src="reels/scrub-jar.mp4" aria-label="Body Scrub Cherry vannada"></video><span class="cap">Body Scrub Cherry</span><button type="button" class="snd" aria-label="Videoni koʻrish"></button></div>
-      <div class="reel"><video preload="none" loop playsinline poster="reels/gel-closeup.jpg" src="reels/gel-closeup.mp4" aria-label="Yuvinish geli yaqindan"></video><span class="cap">Yuvinish geli</span><button type="button" class="snd" aria-label="Videoni koʻrish"></button></div>
-    </div>
-    <div class="strip-ph">
-      <img src="img/gel-hand.webp" alt="Yuvinish geli qoʻlda" loading="lazy" decoding="async" width="1000" height="1333">
-      <img src="img/gel-top.webp" alt="Gel teksturasi yuqoridan" loading="lazy" decoding="async" width="1000" height="1333">
-      <img src="img/foam-hands.webp" alt="Kaftdagi yumshoq koʻpik" loading="lazy" decoding="async" width="590" height="1048">
-      <img src="img/scrub-bath2.webp" alt="Body Scrub Cherry qopqogʻi ochiq" loading="lazy" decoding="async" width="960" height="1280">
-      <img src="img/bath-candle.webp" alt="Vanna yonida skrab va sham" loading="lazy" decoding="async" width="960" height="1280">
-      <img src="img/gel-label.webp" alt="Yuvinish geli yorligʻi" loading="lazy" decoding="async" width="1000" height="1333">
-    </div>
-  </div>
-</section>
-
-<section class="sec tint">
-  <div class="wrap">
-    <div class="sec-h center rv"><h2>Qanday buyurtma beriladi</h2></div>
-    <ol class="steps rv">
-      <li><b>Mahsulot tanlaysiz</b><span>Ism va telefon raqamingizni qoldirasiz.</span></li>
-      <li><b>Operator qoʻngʻiroq qiladi</b><span>15 daqiqa ichida buyurtma va manzilni tasdiqlaydi.</span></li>
-      <li><b>BTS orqali yuboramiz</b><span>2–4 kunda yaqin BTS filialiga yoki manzilingizga.</span></li>
-      <li><b>Olganda toʻlaysiz</b><span>Koʻrib, qoʻlingizga olganingizdan keyin. Oldindan toʻlov yoʻq.</span></li>
-    </ol>
-  </div>
-</section>
-
-<section class="sec order" id="buyurtma">
-  <div class="wrap">
-    <div class="sec-h center"><h2>Buyurtma berish</h2><p>Mahsulotlarni tanlang va raqamingizni qoldiring. Hozir hech narsa toʻlamaysiz.</p></div>
-    <div class="form" id="orderForm">
-      <div class="fields">
-        <div class="promo">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8S10.5 3 7.5 3 5 6.5 7.5 8M12 8s1.5-5 4.5-5S19 6.5 16.5 8"/></svg></span>
-          <div><b id="promoTitle">2 ta oling, 3-chisi sovgʻa</b><span id="promoSub">3 ta va undan koʻp tanlasangiz, eng arzoni bepul.</span></div>
-        </div>
-
-        <div class="fstep">1. Mahsulot va sonini tanlang<small>Bitta mahsulotdan bir nechta ham olsa boʻladi</small></div>
-        <div class="tabs ftabs" role="group" aria-label="Formadagi mahsulot turi" id="ftabs">
-          <button type="button" class="tab" data-f="all" aria-pressed="true">Hammasi</button>
-          <button type="button" class="tab" data-f="face" aria-pressed="false">Yuz uchun</button>
-          <button type="button" class="tab" data-f="body" aria-pressed="false">Tana uchun</button>
-        </div>
-        <div class="picks" id="picks"></div>
-
-        <div class="lockhint" id="lockHint" hidden></div>
-        <div class="giftbox" id="giftBox" hidden>
-          <div class="fstep">Sovgʻani tanlang<small>Narxi bir xil boʻlganlardan qaysi biri bepul boʻlsin?</small></div>
-          <div class="chips" id="giftChips"></div>
-        </div>
-
-        <div class="fstep" style="margin-top:22px">2. Ism va telefon</div>
-        <div class="field"><label for="name">Ismingiz</label><input id="name" type="text" placeholder="Masalan: Madina" autocomplete="name" autocapitalize="words" maxlength="60"></div>
-        <div class="field"><label for="phone">Telefon raqamingiz</label><input id="phone" type="tel" placeholder="+998 __ ___ __ __" autocomplete="tel" inputmode="tel" enterkeyhint="send"><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"></div>
-
-        <div class="sum" id="sum" aria-live="polite"></div>
-        <div class="err" id="err" role="alert"></div>
-        <button class="btn block send" id="send" type="button">Buyurtma berish</button>
-        <p class="fine">Operator 15 daqiqa ichida qoʻngʻiroq qilib, buyurtmani tasdiqlaydi. Yetkazib berish BTS orqali — hududga qarab 25 000 – 40 000 soʻm.</p>
-      </div>
-
-      <div class="done" aria-live="polite">
-        <div class="okic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></div>
-        <h3 id="okTitle" tabindex="-1">Buyurtma qabul qilindi</h3>
-        <p>Operator 15 daqiqa ichida <b id="okPhone"></b> raqamiga qoʻngʻiroq qiladi.</p>
-        <ul class="oklist" id="okList"></ul>
-        <p style="margin-top:14px">Jami toʻlov (olganda): <b id="okTotal"></b></p>
-        <p class="fine">Savol boʻlsa: <a href="tel:+998905004656"><b>+998 90 500 46 56</b></a></p>
-        <button type="button" class="again" id="again">Yana bitta buyurtma berish</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec faq tint" id="savollar">
-  <div class="wrap">
-    <div class="sec-h"><h2>Koʻp beriladigan savollar</h2></div>
-    <details><summary>Sovgʻa qanday hisoblanadi?</summary><p>Buyurtmada 3 ta va undan koʻp mahsulot boʻlsa, ulardan eng arzoni bepul — har bir buyurtmada bitta sovgʻa. Masalan, 3 ta skrab olsangiz — 2 tasi uchun toʻlaysiz. Narxi bir xil mahsulotlar boʻlsa, qaysi biri sovgʻa boʻlishini oʻzingiz tanlaysiz.</p></details>
-    <details><summary>Qaysi mahsulot menga mos?</summary><p>Har kuni yuvinish uchun — Gentle Foaming Cleansing Gel. Makiyajni olish uchun — mitsellyar suv. Haftasiga 1–2 marta chuqur tozalash — papaya piling-puder. Namlik uchun — gialuron serum, undan keyin sentella kremi. Ikkilansangiz, operator maslahat beradi.</p></details>
-    <details><summary>Skrabni qanday va necha marta ishlataman?</summary><p>Dush yoki vannada nam teriga surtib, 1–2 daqiqa doira harakatlari bilan massaj qiling va iliq suv bilan yuving. Haftasiga 2–3 marta yetarli. Keyin Vanilla Fusion suflesini surtsangiz, teri yumshoq boʻladi.</p></details>
-    <details><summary>Yetkazib berish qancha turadi va necha kunda keladi?</summary><p>BTS pochtasi orqali 2–4 kunda keladi. Narxi hududga qarab 25 000 – 40 000 soʻm.</p></details>
-    <details><summary>Toʻlovni qachon qilaman?</summary><p>Mahsulotni qoʻlingizga olganingizda — naqd yoki karta orqali. Saytda hech qanday toʻlov soʻralmaydi.</p></details>
-  </div>
-</section>
-
-<section class="sec contact">
-  <div class="wrap">
-    <div class="sec-h center" style="margin-bottom:0"><h2>Savolingiz bormi?</h2><p>Qoʻngʻiroq qiling — teringizga mos mahsulotni tanlashda yordam beramiz.</p></div>
-    <a class="btn line" href="tel:+998905004656"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>+998 90 500 46 56</a>
-  </div>
-</section>
+  </article>
 </main>
 
-<footer><div class="wrap">
-  <div class="logo"><span class="mk">KAMI<br>LOVE</span><span class="tg">Love yourself!</span></div>
-  <div class="right">
-    <p>Telefon: <a href="tel:+998905004656">+998 90 500 46 56</a></p>
-    <p>Yetkazib berish BTS orqali, toʻlov mahsulotni olganda.</p>
-    <!-- Ishonch uchun sotuvchi rekvizitlarini shu yerga qo'shing: MChJ nomi, STIR (INN), manzil -->
-    <p>© 2026 Kamilove mahsulotlari, Toshkent</p>
-  </div>
-</div></footer>
-
-<div class="bar" id="bar">
-  <a class="btn call" href="tel:+998905004656" aria-label="Qoʻngʻiroq qilish: +998 90 500 46 56"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></a>
-  <a class="btn" href="#buyurtma" id="barBtn">Buyurtma berish</a>
-</div>
-<div class="toast" id="toast" role="status"><span id="toastTxt"></span><a href="#buyurtma">Buyurtmaga oʻtish</a></div>
-
-<script>
-document.documentElement.classList.add('js');
-
-// ======= SOZLAMALAR: faqat shu yerni o'zgartiring =======
-const NEED = 2;                 // aksiya: shuncha ta olsa — 1 tasi sovg'a (2 → "2+1", 3 → "3+1")
-const GIFT_FROM = NEED + 1;     // shuncha va undan ko'p mahsulot tanlansa — eng arzoni sovg'a
-const SITE_TAG = 'KAMILOVE ' + NEED + '+1'; // Bitrix'dagi buyurtmada ko'rinadi
-const MAX_QTY = 99;             // bitta buyurtmada eng ko'p mahsulot
-const PHONE_TXT = '+998 90 500 46 56';
-const OFFER_SET = ['cherry', 'coconut', 'citrus']; // aksiya kartasidagi misol
-
-// Narxlar so'mda. Skrablar va sufle — Kamilove'ning Toshkentdagi narxlari; yuz mahsulotlari narxini tasdiqlang.
-const PRODUCTS = [
- {id:'gel',      cat:'face', name:'Yuvinish geli',       label:'Gentle Foaming Cleansing Gel',   vol:'300 ml', price:150000, img:'img/p-gel.webp',      tint:'#DDEFEA', desc:'Yumshoq koʻpik bilan yuzni har kuni ertalab va kechqurun tozalaydi.'},
- {id:'micellar', cat:'face', name:'Mitsellyar suv',      label:'Micellar Cleansing Water',       vol:'300 ml', price:150000, img:'img/p-micellar.webp', tint:'#DDE9F3', desc:'Makiyaj va kun davomidagi changni paxta disk bilan yengil artib oladi.'},
- {id:'papaya',   cat:'face', name:'Papaya piling-puder', label:'Papaya Enzyme Powder Cleanser',  vol:'70 g',   price:180000, img:'img/p-papaya.webp',   tint:'#FBE3D0', desc:'Enzimli puder chuqur tozalaydi: kaftda suv bilan koʻpirtirib ishlatiladi.'},
- {id:'serum',    cat:'face', name:'Gialuron serum',      label:'Hyaluronic Acid Hydrating Serum',vol:'30 ml',  price:180000, img:'img/p-serum.webp',    tint:'#D9EEE6', desc:'Ultra namlovchi serum. Tozalangan yuzga 2–3 tomchi surtiladi.'},
- {id:'cream',    cat:'face', name:'Sentella kremi',      label:'Centella Revitalizing Cream',    vol:'30 ml',  price:180000, img:'img/p-cream.webp',    tint:'#E4F1ED', desc:'Sentellali yuz kremi: namlaydi va terini tiklaydi. Serumdan keyin.'},
- {id:'cherry',   cat:'body', name:'Skrab Cherry',        label:'Body Scrub Cherry',              vol:'250 g',  price:150000, img:'img/p-cherry.webp',   tint:'#F6DDE7', desc:'Olchali shakar skrab, 100% tabiiy. Moylar terini silliq qiladi.'},
- {id:'coconut',  cat:'body', name:'Skrab Coconut',       label:'Body Scrub Coconut',             vol:'250 g',  price:150000, img:'img/p-coconut.webp',  tint:'#F0EBE3', desc:'Kokosli shakar skrab: oʻlik hujayralarni tozalaydi, terini yumshatadi.'},
- {id:'citrus',   cat:'body', name:'Skrab Citrus',        label:'Body Scrub Citrus',              vol:'250 ml', price:150000, img:'img/p-citrus.webp',   tint:'#FCE6D7', desc:'Sitrusli shakar skrab — tetiklantiruvchi hid va silliq teri.'},
- {id:'vanilla',  cat:'body', name:'Vanilla Fusion',      label:'Tana suflesi',                   vol:'200 ml', price:180000, img:'img/p-vanilla.webp',  tint:'#F7F1CC', desc:'Vanilli sufle: skrabdan keyin terini oziqlantiradi va yumshatadi.'},
-];
-const FACE_STEPS = [
-  {id:'gel',   t:'Tozalash',  s:'Nam yuzga ozgina gel surting, koʻpirtirib, iliq suv bilan yuving. Makiyaj boʻlsa — avval mitsellyar suv.'},
-  {id:'serum', t:'Namlash',   s:'Hali biroz nam teriga 2–3 tomchi serum surting va singishini kuting.'},
-  {id:'cream', t:'Tiklash',   s:'Oxirida yupqa qatlam krem: namlikni ushlab, terini tiklaydi.'},
-];
-const BODY_STEPS = [
-  {id:'cherry',  t:'Skrab',  s:'Nam teriga surtib, 1–2 daqiqa doira harakatlari bilan massaj qiling, yuving. Haftasiga 2–3 marta.'},
-  {id:'vanilla', t:'Sufle',  s:'Quruq teriga yupqa surting — teri yumshoq va silliq boʻlib qoladi.'},
-];
-
-const $ = s => document.querySelector(s);
-const $$ = s => [...document.querySelectorAll(s)];
-const num = n => n.toLocaleString('ru-RU').replace(/\s|,/g, '\u00A0');
-const fmt = n => num(n) + '\u00A0soʻm';
-const byId = id => PRODUCTS.find(p => p.id === id);
-const small = p => p.img.replace('.webp', '-s.webp');   // kichik nusxa (380px) — miniatyuralar uchun
-const thumb = p => `<img src="${small(p)}" alt="" loading="lazy" decoding="async">`;
-// Aksiya bo'yicha narx: GIFT_FROM ta va undan ko'p bo'lsa — eng arzoni bepul
-const promoPrice = ids => { const ps = ids.map(id => byId(id).price), sum = ps.reduce((a, b) => a + b, 0); return ids.length >= GIFT_FROM ? sum - Math.min(...ps) : sum; };
-
-// ======= Aksiya kartasi =======
-(function renderOffer(){
-  const total = NEED + 1;
-  const set = OFFER_SET.slice(0, total);
-  while (set.length < total) set.push(OFFER_SET[set.length % OFFER_SET.length]);
-  const items = set.map(byId);
-  const giftIdx = items.reduce((m, p, i) => p.price < items[m].price ? i : m, items.length - 1);
-  let html = '';
-  items.forEach((p, i) => {
-    const gift = i === giftIdx;
-    if (i) html += '<span class="op" aria-hidden="true">+</span>';
-    html += `<div class="tube${gift ? ' gift' : ''}"><span class="ph"><img src="${small(p)}" alt="${p.label}" loading="eager">${gift ? '<span class="ribbon">Sovgʻa</span>' : ''}</span><b class="num">${gift ? '0\u00A0soʻm' : num(p.price)}</b><small>${p.name}</small></div>`;
-  });
-  $('#tubes').innerHTML = html;
-  const title = `${NEED} ta oling, ${total}-chisi sovgʻa`;
-  const old = items.reduce((a, p) => a + p.price, 0), now = old - items[giftIdx].price;
-  $('#offerTitle').textContent = title;
-  $('#promoTitle').textContent = title;
-  $('#offerLbl').textContent = `Masalan, ${total} ta skrab`;
-  $('#offerOld').textContent = fmt(old);
-  $('#offerNew').textContent = fmt(now);
-  $('#offerSave').textContent = '−' + Math.round(100 * (old - now) / old) + '%';
-  $('#promoSub').textContent = `${GIFT_FROM} ta va undan koʻp tanlasangiz, eng arzoni bepul (buyurtmada 1 ta sovgʻa).`;
-})();
-
-// ======= Yuz / tana qadamlari va to'plamlar =======
-function renderSteps(sel, steps){
-  $(sel).innerHTML = steps.map(st => { const p = byId(st.id); return `
-    <li><span class="th" style="--tint:${p.tint}">${thumb(p)}</span><div><b>${st.t}</b><em>${p.name} · ${p.vol}</em><span>${st.s}</span></div></li>`; }).join('');
-}
-renderSteps('#faceSteps', FACE_STEPS);
-renderSteps('#bodySteps', BODY_STEPS);
-function renderKit(btn, oldSel, newSel){
-  const ids = btn.dataset.kit.split(',');
-  const old = ids.reduce((a, id) => a + byId(id).price, 0), now = promoPrice(ids);
-  $(oldSel).textContent = now < old ? fmt(old) : '';
-  $(newSel).textContent = fmt(now);
-}
-renderKit($('[data-kit="gel,serum,cream"]'), '#kitFaceOld', '#kitFaceNew');
-renderKit($('[data-kit="cherry,citrus,vanilla"]'), '#kitBodyOld', '#kitBodyNew');
-
-// ======= Katalog =======
-function renderCards(){
-  $('#cards').innerHTML = PRODUCTS.map(p => `
-    <article class="card rv" data-id="${p.id}" data-cat="${p.cat}">
-      <div class="ph" style="--tint:${p.tint}">
-        <img src="${p.img}" srcset="${small(p)} 380w, ${p.img} 760w" sizes="(min-width:760px) 30vw, 46vw" alt="Kamilove ${p.label}" loading="lazy" decoding="async">
-        <span class="vol">${p.vol}</span>
-        <span class="cnt" hidden></span>
-      </div>
-      <div class="info">
-        <span class="lab">${p.label}</span>
-        <h3>${p.name}</h3>
-        <p>${p.desc}</p>
-        <div class="pr"><b class="num">${fmt(p.price)}</b></div>
-        <button type="button" class="btn block" data-add="${p.id}"><span class="t">Tanlash</span><span class="sr">: ${p.name}</span></button>
-      </div>
-    </article>`).join('');
-}
-function bindTabs(groupSel, itemSel){
-  $(groupSel).addEventListener('click', e => {
-    const t = e.target.closest('[data-f]'); if (!t) return;
-    $(groupSel).querySelectorAll('[data-f]').forEach(b => b.setAttribute('aria-pressed', b === t));
-    $$(itemSel).forEach(el => { el.hidden = t.dataset.f !== 'all' && el.dataset.cat !== t.dataset.f; });
-  });
-}
-
-// ======= Buyurtma holati =======
-const qty = Object.fromEntries(PRODUCTS.map(p => [p.id, 0]));
-let gift = null;                                           // sovg'a — tanlanganlar ichidan eng arzonlaridan biri
-let giftPicked = false;                                    // mijoz sovg'ani o'zi tanladimi
-const count = () => Object.values(qty).reduce((a, b) => a + b, 0);
-const chosen = () => PRODUCTS.filter(p => qty[p.id] > 0);
-const hasGift = () => count() >= GIFT_FROM;
-const minPrice = () => Math.min(...chosen().map(p => p.price));
-const giftCands = () => hasGift() ? chosen().filter(p => p.price === minPrice()) : [];
-const subtotal = () => chosen().reduce((a, p) => a + p.price * qty[p.id], 0);
-const payable = () => subtotal() - (hasGift() ? minPrice() : 0);
-const paidOf = p => qty[p.id] - (p.id === gift ? 1 : 0);
-function fixGift(){
-  const c = giftCands();
-  if (!c.length) { gift = null; giftPicked = false; return; }
-  if (!giftPicked || !c.some(p => p.id === gift)) { gift = c[0].id; giftPicked = false; } // avtomatik — eng arzonlarining birinchisi
-}
-function resetCart(){ PRODUCTS.forEach(p => qty[p.id] = 0); gift = null; giftPicked = false; }
-function add(id, n = 1){
-  if (count() + n > MAX_QTY) return false;
-  qty[id] += n;
-  $('#orderForm').classList.remove('sent'); // buyurtmadan keyin yana qo'shsa — forma qaytadan ochiladi
-  return true;
-}
-
-function renderPicks(){
-  $('#picks').innerHTML = PRODUCTS.map(p => `
-    <div class="pick" data-id="${p.id}" data-cat="${p.cat}">
-      <button type="button" class="ph" style="--tint:${p.tint}" data-plus="${p.id}" aria-label="${p.name} qoʻshish">${thumb(p)}</button>
-      <span class="nm">${p.name}</span>
-      <span class="pp num">${fmt(p.price)}</span>
-      <div class="qty">
-        <button type="button" data-minus="${p.id}" aria-label="${p.name} kamaytirish">−</button>
-        <output aria-live="polite">0</output>
-        <button type="button" class="plus" data-plus="${p.id}" aria-label="${p.name} koʻpaytirish">+</button>
-      </div>
-    </div>`).join('');
-  $('#picks').addEventListener('click', e => {
-    const pl = e.target.closest('[data-plus]'), mi = e.target.closest('[data-minus]');
-    if (pl) {
-      if (!add(pl.dataset.plus)) { showErr(`Bitta buyurtmada ${MAX_QTY} tagacha mahsulot. Koʻproq kerak boʻlsa, operatorga ayting.`); return; }
-      clearErr(); refresh(pl.dataset.plus);
-    } else if (mi && qty[mi.dataset.minus] > 0) {
-      qty[mi.dataset.minus]--; refresh(mi.dataset.minus);
-    }
-  });
-  $('#giftChips').addEventListener('click', e => {
-    const c = e.target.closest('[data-gift]'); if (!c) return;
-    gift = c.dataset.gift; giftPicked = true; clearErr(); refresh();
-    $('#giftChips [aria-pressed="true"]')?.focus(); // chiplar qayta chiziladi — fokusni qaytaramiz
-  });
-}
-
-function refresh(bumpId){
-  fixGift();
-  const n = count();
-
-  // forma: plitkalar
-  $$('.pick').forEach(el => {
-    const id = el.dataset.id, q = qty[id];
-    el.classList.toggle('on', q > 0);
-    el.querySelector('output').textContent = q;
-    el.querySelector('[data-minus]').disabled = q === 0;
-    if (id === bumpId) { el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump'); }
-  });
-  // katalog: tanlangan soni
-  $$('.card').forEach(el => {
-    const q = qty[el.dataset.id], c = el.querySelector('.cnt');
-    c.hidden = q === 0; c.textContent = `Tanlandi: ${q}`;
-    el.querySelector('[data-add] .t').textContent = q ? 'Yana bitta' : 'Tanlash';
-  });
-  // sovg'a: narxi bir xil eng arzonlar bir nechta bo'lsa — mijoz tanlaydi
-  const cands = giftCands();
-  $('#giftBox').hidden = cands.length < 2;
-  $('#giftChips').innerHTML = cands.map(p => `<button type="button" class="chip" style="--tint:${p.tint}" data-gift="${p.id}" aria-pressed="${p.id === gift}">${thumb(p)}${p.name}</button>`).join('');
-  const hint = $('#lockHint');
-  if (n < GIFT_FROM) {
-    hint.hidden = false;
-    hint.innerHTML = n ? `Yana ${GIFT_FROM - n} ta tanlasangiz, eng arzoni <b>sovgʻa</b> boʻladi` : `${GIFT_FROM} ta va undan koʻp tanlasangiz, eng arzoni <b>sovgʻa</b> boʻladi`;
-  } else hint.hidden = true;
-
-  // hisob
-  const rows = chosen().map(p => `<div><span>${p.name} × ${qty[p.id]}</span><b>${fmt(p.price * qty[p.id])}</b></div>`);
-  if (!n) rows.push('<div class="empty">Hali mahsulot tanlanmadi</div>');
-  if (hasGift() && gift) rows.push(`<div class="free"><span>Sovgʻa: ${byId(gift).name}</span><b>−${fmt(byId(gift).price)}</b></div>`);
-  rows.push(`<div class="total"><span>Jami${n ? ` (${n} ta)` : ''}</span><b class="num">${fmt(payable())}</b></div>`);
-  $('#sum').innerHTML = rows.join('');
-
-  $('#barBtn').textContent = n ? `Buyurtma berish (${n} ta)` : 'Buyurtma berish';
-}
-
-// ======= Katalog va to'plam tugmalari =======
-document.addEventListener('click', e => {
-  const a = e.target.closest('[data-add]');
-  if (a) {
-    const id = a.dataset.add;
-    if (!add(id)) { toast(`Bitta buyurtmada ${MAX_QTY} tagacha mahsulot`); return; }
-    refresh(id);
-    const n = count();
-    toast(n >= GIFT_FROM ? `${byId(id).name} qoʻshildi. ${n} ta — eng arzoni sovgʻa` : `${byId(id).name} qoʻshildi. Jami: ${n} ta`);
-    return;
-  }
-  const k = e.target.closest('[data-kit]');
-  if (k) {
-    const ids = k.dataset.kit.split(',');
-    if (count() + ids.length > MAX_QTY) { toast(`Bitta buyurtmada ${MAX_QTY} tagacha mahsulot`); return; }
-    ids.forEach(id => add(id));
-    refresh();
-    toast(`Toʻplam qoʻshildi: ${ids.length} ta. Jami: ${count()} ta`);
-  }
-});
-
-// ======= Toast =======
-let tt;
-function toast(msg){
-  $('#toastTxt').textContent = msg;
-  $('#toast').classList.add('on');
-  clearTimeout(tt); tt = setTimeout(() => $('#toast').classList.remove('on'), 3200);
-}
-$('#toast a').addEventListener('click', () => $('#toast').classList.remove('on'));
-
-// ======= Telefon: +998 XX XXX XX XX =======
-function fmtPhone(v){
-  let d = v.replace('+998', '').replace(/\D/g, '').replace(/^00/, '');
-  if (d.length > 9 && d.startsWith('998')) d = d.slice(3);
-  d = d.slice(0, 9);
-  const p = [d.slice(0,2), d.slice(2,5), d.slice(5,7), d.slice(7,9)].filter(Boolean);
-  return '+998' + (p.length ? ' ' + p.join(' ') : ' ');
-}
-const nameEl = $('#name'), phoneEl = $('#phone');
-const phoneOk = () => /^998[1-9]\d{8}$/.test(phoneEl.value.replace(/\D/g, ''));
-const caretEnd = el => { try { const n = el.value.length; el.setSelectionRange(n, n); } catch (e) {} };
-phoneEl.addEventListener('focus', e => { if (!e.target.value) e.target.value = '+998 '; setTimeout(() => caretEnd(e.target), 0); });
-phoneEl.addEventListener('input', e => { e.target.value = fmtPhone(e.target.value); caretEnd(e.target); e.target.classList.remove('bad'); clearErr(); });
-// To'liq raqam joylashtirilsa (paste) — yarim yozilganiga qo'shilmasin, butunlay almashtiriladi
-phoneEl.addEventListener('paste', e => {
-  const t = (e.clipboardData && e.clipboardData.getData('text')) || '';
-  if (t.replace(/\D/g, '').length < 9) return;
-  e.preventDefault(); phoneEl.value = fmtPhone(t); caretEnd(phoneEl); phoneEl.classList.remove('bad'); clearErr();
-});
-nameEl.addEventListener('input', e => { e.target.classList.remove('bad'); clearErr(); });
-nameEl.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); phoneEl.focus(); } });
-phoneEl.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); $('#send').click(); } });
-
-function showErr(msg){ const el = $('#err'); el.textContent = msg; el.classList.add('on'); }
-function clearErr(){ $('#err').classList.remove('on'); }
-
-// ======= Yuborish: /api/order → server.js → Bitrix24 =======
-// GitHub Pages'da server yo'q: u yerda sahifa faqat ko'rish uchun, buyurtma yuborilmaydi
-const DEMO = /\.github\.io$/.test(location.hostname);
-if (DEMO) document.body.insertAdjacentHTML('afterbegin',
-  '<div style="background:#2B292D;color:#fff;text-align:center;font:600 14px/1.4 system-ui,sans-serif;padding:8px 12px">Koʻrish nusxasi: bu sahifadan buyurtma yuborilmaydi</div>');
-
-async function sendOrder(data){
-  if (DEMO) { await new Promise(r => setTimeout(r, 600)); return true; }
-  const utm = {};
-  try { new URLSearchParams(location.search).forEach((v, k) => { const kk = k.toLowerCase(); if (kk.startsWith('utm_')) utm[kk] = v; }); } catch (e) {}
-  const ac = new AbortController(), timer = setTimeout(() => ac.abort(), 15000); // tarmoq osilib qolsa — 15 s
-  try {
-    const r = await fetch('/api/order', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, signal: ac.signal,
-      body: JSON.stringify({...data, site: SITE_TAG, page: location.href, utm, hp: $('.hp').value})
-    });
-    if (!r.ok) throw new Error('server');
-    const j = await r.json().catch(() => ({}));
-    return j && j.ok !== false;
-  } finally { clearTimeout(timer); }
-}
-
-let sending = false;
-$('#send').addEventListener('click', async () => {
-  if (sending) return;
-  clearErr();
-  if (!count()) { showErr('Kamida 1 ta mahsulot tanlang — rasm ostidagi «+» tugmasini bosing.'); $('#picks').scrollIntoView({behavior:'smooth', block:'center'}); return; }
-  if (!nameEl.value.trim()) { showErr('Ismingizni yozing.'); nameEl.classList.add('bad'); nameEl.focus(); return; }
-  if (!phoneOk()) { showErr('Telefon raqamini toʻliq yozing: +998 XX XXX XX XX'); phoneEl.classList.add('bad'); phoneEl.focus(); return; }
-  // spam-bot tuzog'i (hp) serverga yuboriladi — server o'zi tashlab yuboradi
-
-  // Bitrix uchun: to'lanadigan mahsulotlar + alohida sovg'a. Hammasi shu lahzadagi savatdan olinadi.
-  const g = gift && hasGift() ? byId(gift) : null;
-  const paid = chosen().filter(p => paidOf(p) > 0).map(p => ({p, n: paidOf(p)}));
-  const items = paid.map(({p, n}) => ({id: p.id, name: `${p.label} (${p.vol}) — ${n} ta`}));
-  const data = {
-    items,
-    gift: g ? {id: g.id, name: `${g.label} (${g.vol}) — 1 ta`} : null,
-    bonus: g ? 1 : 0,
-    name: nameEl.value.trim(),
-    phone: phoneEl.value.trim(),
-    total: fmt(payable()),
-    sum: payable()
-  };
-
-  const lines = paid.map(({p, n}) => `<li>${thumb(p)}${p.name}<em>${n} ta</em></li>`);
-  if (g) lines.push(`<li>${thumb(g)}${g.name}<em class="g">sovgʻa</em></li>`);
-
-  const btn = $('#send'), fields = $('#orderForm .fields');
-  sending = true; btn.disabled = true; btn.textContent = 'Yuborilmoqda…'; fields.inert = true; // yuborilayotganda savat o'zgarmasin
-  let ok = false;
-  try { ok = await sendOrder(data); } catch (e) { ok = false; }
-  sending = false; btn.disabled = false; btn.textContent = 'Buyurtma berish'; fields.inert = false;
-  if (!ok) { showErr(`Buyurtma yuborilmadi — internetni tekshirib, qayta bosing. Yoki qoʻngʻiroq qiling: ${PHONE_TXT}`); return; }
-
-  $('#okList').innerHTML = lines.join('');
-  $('#okTotal').textContent = data.total;
-  $('#okPhone').textContent = data.phone;
-  $('#toast').classList.remove('on');
-  resetCart(); refresh();
-  $('#orderForm').classList.add('sent');
-  $('#orderForm').scrollIntoView({behavior:'smooth', block:'center'});
-  $('#okTitle').focus({preventScroll: true});
-});
-
-$('#again').addEventListener('click', () => {
-  resetCart();
-  nameEl.value = ''; phoneEl.value = ''; clearErr();
-  $('#orderForm').classList.remove('sent'); refresh();
-  $('#orderForm').scrollIntoView({behavior:'smooth', block:'start'});
-  nameEl.focus({preventScroll: true});
-});
-
-// ======= Videolar: bosilganda ovozi bilan o'ynaydi, bir vaqtda faqat bittasi =======
-(function(){
-  const icon = {
-    play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>',
-    pause:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>'
-  };
-  const reels = $$('.reel');
-  const sync = c => {
-    const v = c.querySelector('video'), b = c.querySelector('.snd'), on = !v.paused;
-    b.innerHTML = on ? icon.pause : icon.play;
-    b.setAttribute('aria-label', on ? 'Toʻxtatish' : 'Videoni koʻrish');
-    c.classList.toggle('playing', on);
-  };
-  reels.forEach(c => {
-    const v = c.querySelector('video');
-    v.addEventListener('play', () => sync(c));
-    v.addEventListener('pause', () => sync(c));
-    sync(c);
-    c.addEventListener('click', () => {
-      if (v.paused) {
-        reels.forEach(o => { if (o !== c) o.querySelector('video').pause(); });
-        v.muted = false;
-        v.play().catch(() => { v.muted = true; v.play().catch(() => {}); });
-      } else v.pause();
-    });
-  });
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver(es => es.forEach(en => { if (!en.isIntersecting) en.target.querySelector('video').pause(); }), {threshold: .2});
-    reels.forEach(c => io.observe(c));
-  }
-})();
-
-renderCards(); renderPicks(); refresh();
-bindTabs('#tabs', '.card');
-bindTabs('#ftabs', '.pick');
-
-// Pastki panel: forma ko'rinib turganda yashiriladi; bo'limlar ohista paydo bo'ladi
-if ('IntersectionObserver' in window) {
-  new IntersectionObserver(es => {
-    const on = es[0].isIntersecting;
-    $('#bar').classList.toggle('hide', on);
-    if (on) $('#toast').classList.remove('on'); // forma ochiq — "Buyurtmaga o'tish" kerak emas
-  }, {threshold: .1}).observe($('#buyurtma'));
-  const ro = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); ro.unobserve(en.target); } }), {rootMargin: '0px 0px -8% 0px'});
-  $$('.rv').forEach(el => ro.observe(el));
-} else $$('.rv').forEach(el => el.classList.add('in'));
-</script>
+<footer><div class="wrap">Har bir variant alohida sahifa: <b>/v1/</b>, <b>/v2/</b>, <b>/v3/</b>, <b>/v4/</b>. Narx va aksiya har birining <code>index.html</code> faylidagi SOZLAMALAR blokida.</div></footer>
 </body>
 </html>

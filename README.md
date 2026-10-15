@@ -1,13 +1,21 @@
-# Kamilove — sotuv sahifasi (2+1 aksiya)
+# Kamilove — sotuv sahifasi (2+1 aksiya), 4 xil dizayn
 
-Jonli koʻrinish: https://forwork7002.github.io/kamilove/
+Jonli koʻrinish: https://forwork7002.github.io/kamilove/ — bosh sahifada 4 variantni tanlash mumkin.
 
-Bitta `index.html` (HTML + CSS + JS, build kerak emas), `img/` — rasmlar (webp), `reels/` — videolar (mp4 + poster).
-Dizayn LIPS 1-variantiga oʻxshatib qilingan: aksiya kartasi, katalog, yuz/tana parvarishi, videolar, buyurtma formasi, savollar.
+| Papka | Dizayn | Qisqacha |
+|---|---|---|
+| `v1/` | Ink & Pastel | oq fon, myatniy aksiya kartasi, qora-oq marmar; keng sahifa (LIPS 1-variantiga oʻxshash) |
+| `v2/` | Bir ustun | telefon ekranidek tor bitta ustun, narx jadvali (LIPS 2-variantiga oʻxshash) |
+| `v3/` | Noir Marble | toʻq fon, galereya uslubi, katta sarlavhalar |
+| `v4/` | Pastel Bento | yorliq ranglaridagi kataklar, quvnoq |
+
+Har bir variant — bitta `index.html` (HTML + CSS + JS, build kerak emas). Umumiy fayllar ildizda:
+`img/` (rasmlar, webp), `reels/` (videolar), `previews/` (bosh sahifa uchun skrinshotlar).
+Mahsulotlar, narxlar, aksiya va buyurtma mantigʻi toʻrttalasida bir xil — farqi faqat dizaynda.
 
 ## Narx va aksiyani oʻzgartirish
 
-`index.html` ichida, `<script>` boshida — **SOZLAMALAR** bloki:
+Har bir variantning `index.html` faylida, `<script>` boshida — **SOZLAMALAR** bloki:
 
 ```js
 const NEED = 2;      // 2 → "2+1", 3 → "3+1"
@@ -16,18 +24,20 @@ const PRODUCTS = [   // har bir mahsulot: nom, hajm, narx (soʻm), rasm, tavsif
 ];
 ```
 
-Aksiya qoidasi: buyurtmada `NEED + 1` ta va undan koʻp mahsulot boʻlsa, **eng arzoni bepul** (bitta).
+Aksiya qoidasi: buyurtmada `NEED + 1` ta va undan koʻp mahsulot boʻlsa, **eng arzoni bepul** (har bir buyurtmada bitta).
 Eng arzon narxdagi mahsulotlar bir nechta boʻlsa, mijoz qaysi biri sovgʻa boʻlishini tanlaydi.
+Narxni oʻzgartirsangiz — toʻrttala variantda ham oʻzgartiring.
 
 ## Buyurtmalar
 
 Forma `POST /api/order` ga yuboradi — LIPS saytidagi `server.js` bilan bir xil format
-(`items`, `gift`, `bonus`, `name`, `phone`, `total`, `sum`, `site`, `page`, `utm`).
+(`items`, `gift`, `bonus`, `name`, `phone`, `total`, `sum`, `site`, `page`, `utm`, `hp`).
 GitHub Pages'da server yoʻq, shuning uchun `*.github.io` da sahifa **koʻrish nusxasi** rejimida ishlaydi:
 tepada ogohlantirish chiqadi va buyurtma hech qayerga yuborilmaydi.
-Haqiqiy buyurtma olish uchun sahifani `server.js` bor serverga (`public/` papkasiga) qoʻyish kerak.
+Haqiqiy buyurtma olish uchun tanlangan variantni `server.js` bor serverga qoʻyish kerak
+(variant `index.html` + `img/` + `reels/`; bunda rasm yoʻllari `../img/` → `img/` boʻladi).
 
 ## Rasmlar va videolar
 
-Manba: `IMG_.zip`. Rasmlar webp ga oʻtkazilgan, mahsulot rasmlarining fon shaffof (`p-*.webp`),
+Manba: `IMG_.zip`. Rasmlar webp ga oʻtkazilgan, mahsulot rasmlarining foni shaffof (`p-*.webp`),
 telefon uchun kichik nusxalari `p-*-s.webp`, `hero-s.webp`. Videolar H.264 mp4, 576×1024.
