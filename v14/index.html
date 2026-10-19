@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#ffffff">
+<title>Kami Love — Enzim pudra + Skrab + Gel, 290 000 so‘m</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;
+  --surface:#FFFFFF;
+  --blush:#F7ECEE;
+  --blush-deep:#EFDDE1;
+  --ink:#1E1A1B;
+  --muted:#6F6568;
+  --line:#ECE4E5;
+  --rose:#A4596D;
+  --rose-ink:#FFFFFF;
+  --shadow:0 18px 50px -24px rgba(60,30,38,.25);
+  color-scheme:light only;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Figtree",-apple-system,"Segoe UI",system-ui,sans-serif;
+  font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+
+.wrap{width:min(100% - 40px, 1040px);margin-inline:auto}
+.serif{font-family:"Fraunces","Iowan Old Style","Palatino Linotype",Georgia,serif;font-weight:400;letter-spacing:-.01em}
+h1,h2,h3{font-family:"Fraunces","Iowan Old Style","Palatino Linotype",Georgia,serif;font-weight:400;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h1{font-size:clamp(38px,9.6vw,62px);line-height:1.04;letter-spacing:-.015em;font-variation-settings:"opsz" 84}
+h2{font-size:clamp(30px,7.6vw,40px);line-height:1.12}
+h3{font-size:22px;line-height:1.25}
+p{margin:0}
+.muted{color:var(--muted)}
+
+/* header */
+header{padding:22px 0 8px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-family:"Fraunces",Georgia,serif;font-size:22px;letter-spacing:.02em;font-weight:500}
+.brand span{font-style:italic;font-weight:300}
+.brand-wrap{display:flex;align-items:baseline;gap:14px}
+.tagline{display:none;font-size:14px;color:var(--muted)}
+@media (min-width:860px){.tagline{display:inline}}
+.phone{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--ink);white-space:nowrap;padding:9px 14px;border:1px solid var(--line);border-radius:999px}
+.phone svg{width:16px;height:16px;fill:none;stroke:var(--rose);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media (min-width:860px){.phone{font-size:15px}}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:56px;padding:0 28px;border-radius:999px;border:0;cursor:pointer;
+  background:var(--rose);color:var(--rose-ink);font-weight:600;font-size:17px;
+  transition:transform .15s ease,opacity .15s ease;width:100%;
+}
+.btn:hover{opacity:.94}
+.btn:active{transform:scale(.985)}
+.btn:focus-visible,input:focus-visible,.chip:focus-within{outline:3px solid var(--rose);outline-offset:3px}
+@media (min-width:720px){.btn{width:auto;min-width:240px}}
+
+/* hero */
+.hero{padding:20px 0 48px}
+.hero .wrap{display:grid;gap:26px;align-items:center}
+.hero-copy{display:contents}
+.hero-copy > *{margin:0}
+.hero-copy h1{order:1}
+.hero-copy .lead{order:2;margin-top:-10px}
+.stage{order:3}
+.hero-copy .price{order:4}
+.hero-copy .btn{order:5;margin-top:-6px}
+.hero-copy .trust{order:6;margin-top:-6px}
+.lead{font-size:17px;line-height:1.55;max-width:46ch;color:var(--muted)}
+@media (min-width:860px){.lead{font-size:18px}}
+.price{display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap}
+.price .now{font-family:"Fraunces",Georgia,serif;font-size:48px;line-height:1;font-variation-settings:"opsz" 72;letter-spacing:-.02em}
+.price .now small{font-size:20px;margin-left:4px}
+.price .was{color:var(--muted);font-size:16px}
+.price .was s{text-decoration-thickness:1px;text-decoration-color:var(--rose)}
+.price .save{flex-basis:100%;font-size:15px;color:var(--rose);font-weight:600}
+.trust{list-style:none;margin:4px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;font-size:14px;color:var(--muted)}
+.trust li:last-child{grid-column:1 / -1}
+@media (min-width:860px){.trust{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:15px}}
+.trust li{display:flex;align-items:center;gap:8px}
+.trust svg{width:20px;height:20px;fill:none;stroke:var(--rose);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round;flex:none}
+
+.stage{
+  position:relative;aspect-ratio:1/1;max-width:520px;width:100%;margin:0 auto;
+  display:block;overflow:visible
+}
+.blob{position:absolute;left:50%;top:56%;width:100%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle at 50% 46%, #F8EDEF 0%, #F4E1E5 52%, rgba(244,225,229,0) 71%);pointer-events:none}
+.prod{position:absolute;bottom:0;margin:0}
+.prod img{width:100%;height:auto;display:block;position:relative;z-index:1;filter:drop-shadow(0 10px 10px rgba(60,30,38,.10))}
+.prod::after{content:"";position:absolute;left:8%;right:8%;bottom:-2.5%;height:9%;border-radius:50%;
+  background:radial-gradient(ellipse at center, rgba(70,35,45,.30), rgba(70,35,45,0) 68%);filter:blur(3px)}
+.stage .skrab{left:21%;bottom:17%;width:58%;z-index:3}
+.stage .pudra{left:3%;bottom:34%;width:25%;z-index:2}
+.stage .gel{right:2%;bottom:34%;width:27%;z-index:2}
+.note{position:absolute;z-index:4;background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 12px;
+  font-size:12.5px;font-weight:500;white-space:nowrap;box-shadow:0 8px 22px -10px rgba(60,30,38,.35);border:1px solid rgba(60,30,38,.06)}
+.note.gift{background:var(--rose);color:#fff;border-color:transparent}
+.n1{left:0;top:3%}
+.n2{left:50%;bottom:3%;transform:translateX(-50%)}
+.n3{right:0;top:3%}
+@media (min-width:420px){.note{font-size:13px;padding:8px 14px}}
+@media (min-width:860px){
+  .hero{padding:40px 0 80px}
+  .hero .wrap{grid-template-columns:1.05fr .95fr;gap:56px}
+  .hero-copy{display:flex;flex-direction:column;gap:22px;order:1}
+  .hero-copy > *{order:0;margin:0}
+  .stage{order:2}
+}
+
+/* sections */
+section{padding:48px 0}
+@media (min-width:860px){section{padding:84px 0}}
+.sec-head{display:flex;flex-direction:column;gap:8px;margin-bottom:24px;max-width:52ch}
+@media (min-width:860px){.sec-head{margin-bottom:32px}}
+.sec-head p{color:var(--muted)}
+
+/* set */
+.set{display:grid;gap:14px}
+.item{
+  display:grid;grid-template-columns:112px 1fr;gap:18px;align-items:center;
+  background:var(--blush);border-radius:22px;padding:14px 18px 14px 14px
+}
+.item .pic{height:132px;display:grid;place-items:center;background:var(--surface);border-radius:16px}
+.item .pic img{max-height:112px;max-width:84%;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 8px 10px rgba(60,30,38,.12))}
+.item h3{font-size:20px}
+.item p{font-size:15px;line-height:1.5;color:var(--muted);margin-top:4px}
+.item .role{font-family:"Fraunces",Georgia,serif;font-style:italic;font-size:15px;color:var(--rose);margin-top:8px}
+.scents{list-style:none;margin:12px 0 0;padding:0;display:flex;gap:8px}
+.scents li{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:12px;color:var(--muted);width:56px}
+.scents img{width:48px;height:48px;object-fit:contain;background:var(--surface);border-radius:12px;padding:4px}
+@media (min-width:860px){
+  .set{grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+  .item{grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:18px;padding:14px 14px 24px;align-items:start;align-self:stretch}
+  .item > div:last-child{padding:0 10px}
+  .item .pic{height:240px}
+  .item .pic img{max-height:200px}
+}
+
+/* results */
+.results{display:grid;gap:18px}
+.ba{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:8px;overflow:hidden}
+.ba-half{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;background:var(--blush)}
+.ba-half img{width:100%;height:100%;object-fit:cover}
+.ba-half:first-child img{object-position:38% center}
+.ba-half:nth-child(2) img{object-position:62% center}
+.ba-label{position:absolute;left:10px;top:10px;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:600;background:rgba(255,255,255,.92);color:var(--ink);backdrop-filter:blur(6px)}
+.ba-half:nth-child(2) .ba-label{background:var(--rose);color:#fff}
+.ba figcaption{grid-column:1 / -1;padding:12px 8px 6px;font-family:"Fraunces",Georgia,serif;font-style:italic;font-size:16px;color:var(--muted);text-align:center;letter-spacing:.005em}
+.shots{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:0 20px 6px;scrollbar-width:none;scroll-padding:0 20px}
+.shots::-webkit-scrollbar{display:none}
+.shot{margin:0;flex:0 0 72%;scroll-snap-align:start;min-width:0}
+.shot-img{border-radius:20px;overflow:hidden;background:var(--blush);aspect-ratio:3/4;min-height:280px}
+.shot-img img,.shot-img video{width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block;background:var(--blush)}
+.shot figcaption{padding:12px 4px 0;font-size:14px;line-height:1.5;color:var(--muted)}
+.shot figcaption strong{display:block;font-family:"Fraunces",Georgia,serif;font-weight:500;font-size:18px;color:var(--ink);margin-bottom:2px;letter-spacing:-.01em}
+.swipe-hint{font-size:13px;color:var(--muted);margin-top:10px;display:flex;align-items:center;gap:6px}
+.swipe-hint svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media (min-width:860px){
+  .results{grid-template-columns:2fr 3fr;gap:24px;align-items:start}
+  .ba{padding:10px;gap:8px;border-radius:26px}
+  .ba-half{border-radius:18px;aspect-ratio:3/4}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;overflow:visible;margin:0;padding:0;scroll-snap-type:none}
+  .shot{flex:none}
+  .shot-img{min-height:0}
+  .swipe-hint{display:none}
+}
+@media (min-width:1200px){
+  .results{margin:0 -80px}
+}
+
+/* steps */
+.steps{display:grid;gap:0;counter-reset:s;border-top:1px solid var(--line)}
+.step{counter-increment:s;display:grid;grid-template-columns:36px 1fr;gap:12px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.step::before{
+  content:counter(s);font-family:"Fraunces",Georgia,serif;font-style:italic;font-size:30px;line-height:1;color:var(--rose);padding-top:2px
+}
+.step h3{font-size:19px}
+.step p{font-size:15px;color:var(--muted);margin-top:4px}
+@media (min-width:860px){
+  .steps{grid-template-columns:repeat(3,1fr);gap:40px;border-top:0}
+  .step{grid-template-columns:1fr;gap:14px;padding:0;border-bottom:0;border-top:1px solid var(--line);padding-top:22px}
+}
+
+/* order */
+.order{padding-bottom:120px}
+.order-card{
+  min-width:0;max-width:100%;
+  background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:24px 18px;
+  box-shadow:var(--shadow);display:grid;gap:22px
+}
+@media (min-width:860px){
+  .order .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .order-card{padding:40px}
+  .order{padding-bottom:84px}
+}
+.order-photo{border-radius:28px;overflow:hidden;aspect-ratio:4/5;max-height:620px;background:var(--blush);display:none}
+.order-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+@media (min-width:860px){.order-photo{display:block}}
+.field{display:grid;gap:8px}
+label{font-size:15px;font-weight:500}
+input[type=text],input[type=tel]{
+  width:100%;min-height:54px;border:1px solid var(--line);border-radius:14px;padding:0 16px;
+  background:var(--bg);font-size:17px
+}
+input::placeholder{color:#A39A9C}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{
+  display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;
+  border:1px solid var(--line);background:var(--bg);font-size:15px;font-weight:500;transition:all .15s ease
+}
+.chip input:checked + span{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.scent-head{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px}
+.scent-pic{position:relative;flex:none;width:56px;height:56px;border-radius:14px;background:var(--blush)}
+.scent-pic img{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);object-fit:contain;opacity:0;transition:opacity .2s ease}
+.scent-pic img.on{opacity:1}
+.order-price{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:6px 12px;padding-top:18px;border-top:1px solid var(--line);min-width:0}
+.order-price .now{font-family:"Fraunces",Georgia,serif;font-size:30px;line-height:1;white-space:nowrap}
+.order-price .was{color:var(--muted);font-size:14px;white-space:nowrap}
+.order-thumbs{display:flex;gap:8px;margin-top:14px}
+.order-thumbs span{width:56px;height:56px;border-radius:14px;background:var(--blush);display:grid;place-items:center}
+.order-thumbs img{max-height:46px;max-width:44px;width:auto;height:auto;object-fit:contain}
+.fine{font-size:14px;color:var(--muted);text-align:center}
+.done{display:none;text-align:center;padding:24px 0;gap:10px;justify-items:center}
+.done .check{width:56px;height:56px;fill:none;stroke:var(--rose);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:6px}
+.done h3{font-size:26px}
+.order-card.is-done form{display:none}
+.order-card.is-done .done{display:grid}
+
+/* motion — one page-load reveal for the hero, quiet scroll reveals for photos, and
+   only motion that answers a touch elsewhere. All of it is off under reduced-motion. */
+@media (prefers-reduced-motion: no-preference){
+  .stage .prod{opacity:0;transform:translateY(26px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+  .stage .skrab{animation-delay:.1s}
+  .stage .pudra{animation-delay:.28s}
+  .stage .gel{animation-delay:.4s}
+  .stage .note{opacity:0;animation:fade .6s ease forwards}
+  .n1{animation-delay:1s!important}.n2{animation-delay:1.15s!important}.n3{animation-delay:1.3s!important}
+  .blob{animation:glow 7s ease-in-out infinite}
+  .stage .prod img{animation:float 6s ease-in-out infinite}
+  .stage .skrab img{animation-duration:7s;animation-delay:.6s}
+  .stage .gel img{animation-duration:6.5s;animation-delay:1.2s}
+  .reveal{opacity:0;transform:translateY(18px) scale(.98);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .shot-img img,.shot-img video,.ba-half img{transform:scale(1.06);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+  .shot.in .shot-img img,.shot.in .shot-img video,.ba.in .ba-half img{transform:scale(1)}
+  .item .pic img{transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+  .item:hover .pic img{transform:translateY(-6px) scale(1.03)}
+  .scent-pic img{transform:scale(.86) rotate(-6deg);transition:opacity .25s ease,transform .35s cubic-bezier(.2,.7,.2,1)}
+  .scent-pic img.on{transform:none}
+  .done .check circle{stroke-dasharray:140;stroke-dashoffset:140;animation:draw .6s ease forwards}
+  .done .check path{stroke-dasharray:40;stroke-dashoffset:40;animation:draw .4s ease .45s forwards}
+  .order-thumbs span{transition:transform .3s ease}
+  .order-thumbs span:hover{transform:translateY(-3px)}
+}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes fade{to{opacity:1}}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -5px}}
+@keyframes glow{0%,100%{opacity:.7}50%{opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+/* footer */
+footer{padding:36px 0 120px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.foot-brand{display:flex;align-items:baseline;gap:12px;flex-basis:100%}
+.foot-brand .brand{font-size:20px}
+@media (min-width:860px){.foot-brand{flex-basis:auto}}
+@media (min-width:860px){footer{padding-bottom:48px}}
+
+/* sticky bar */
+.bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:20;
+  padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));
+  background:rgba(255,255,255,.9);
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  transform:translateY(110%);transition:transform .3s ease
+}
+.bar.show{transform:none}
+.bar .p{font-family:"Fraunces",Georgia,serif;font-size:20px;line-height:1.1;white-space:nowrap;min-width:0}
+.bar .p small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .p small{display:block;font-family:"Figtree",sans-serif;font-size:12px;color:var(--muted);margin-top:2px}
+.bar .btn{width:auto;min-height:50px;padding:0 20px;font-size:16px;white-space:nowrap;flex:none}
+@media (min-width:860px){.bar{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand-wrap"><a class="brand" href="#top">Kami <span>Love</span></a><span class="tagline">yuz va tana parvarishi</span></div>
+    <a class="phone" href="tel:+998905004656"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>+998 90 500 46 56</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>Yuz va tana uchun to‘liq tozalash to‘plami</h1>
+      <p class="lead">Enzim pudra, shakarli skrab va yuvinish geli — uchtasi birga, gel sovg‘a.</p>
+      <div class="price">
+        <span class="now">290 000<small>so‘m</small></span>
+        <span class="was">alohida olinsa <s>480 000</s></span>
+        <span class="save">190 000 so‘m tejaysiz</span>
+      </div>
+      <a class="btn" href="#order">Buyurtma berish</a>
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-3 4-7 5-7 10a7 7 0 0 0 14 0c0-5-4-6-7-10z"/></svg>Tabiiy tarkib</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>Yetkazish 2–4 kun</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg>To‘lov qo‘lga olganda</li>
+      </ul>
+    </div>
+    <div class="stage" aria-label="To‘plam: enzim pudra, tana skrabi va yuvinish geli">
+      <div class="blob" aria-hidden="true"></div>
+      <div class="prod pudra"><img src="img/p-papaya.webp" alt="Papaya enzim pudra, 70 g" width="580" height="1200"></div>
+      <div class="prod gel"><img src="img/p-gel.webp" alt="Yuvinish geli, 300 ml" width="636" height="1200"></div>
+      <div class="prod skrab"><img id="stage-skrab" src="img/p-cherry.webp" alt="Tana skrabi, 250 g" width="1100" height="926"></div>
+      <span class="note n1">Enzim pudra · 70 g</span>
+      <span class="note n2">Skrab · 250 g · 3 xil hid</span>
+      <span class="note n3 gift">Gel 300 ml · sovg‘a</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>To‘plamda nima bor</h2>
+      <p>Har kuni ishlatiladigan uchta oddiy vosita — alohida emas, birga tanlangan.</p>
+    </div>
+    <div class="set">
+      <article class="item reveal">
+        <div class="pic"><img loading="lazy" src="img/p-papaya.webp" alt="" width="580" height="1200"></div>
+        <div>
+          <h3>Papaya enzim pudra</h3>
+          <p>70 g. Kaftda suv bilan ko‘pirtirib, yuzga surtiladi. Terini chuqur, lekin yumshoq tozalaydi.</p>
+          <p class="role">Asosiy mahsulot</p>
+        </div>
+      </article>
+      <article class="item reveal" style="transition-delay:.08s">
+        <div class="pic"><img loading="lazy" src="img/p-cherry.webp" alt="" width="1100" height="926"></div>
+        <div>
+          <h3>Tana skrabi</h3>
+          <p>250 g. Shakarli tabiiy skrab — o‘lik hujayralarni tozalaydi, teri silliq bo‘ladi.</p>
+          <ul class="scents">
+            <li><img loading="lazy" src="img/p-cherry.webp" alt="" width="1100" height="926">Olcha</li>
+            <li><img loading="lazy" src="img/p-coconut.webp" alt="" width="900" height="742">Kokos</li>
+            <li><img loading="lazy" src="img/p-citrus.webp" alt="" width="900" height="900">Sitrus</li>
+          </ul>
+          <p class="role">To‘plamda</p>
+        </div>
+      </article>
+      <article class="item reveal" style="transition-delay:.16s">
+        <div class="pic"><img loading="lazy" src="img/p-gel.webp" alt="" width="636" height="1200"></div>
+        <div>
+          <h3>Yuvinish geli</h3>
+          <p>300 ml. Ertalab va kechqurun yuz uchun yumshoq ko‘pik. Har kungi parvarish uchun.</p>
+          <p class="role">Sovg‘a</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Natija</h2>
+      <p>Mahsulotlar ishda — sahnalashtirilmagan suratlar.</p>
+    </div>
+    <div class="results">
+      <figure class="ba reveal">
+        <div class="ba-half">
+          <img loading="lazy" src="img/r-before.webp" alt="Skrabdan oldin: notekis, g‘adir-budur teri" width="1080" height="740">
+          <span class="ba-label">Oldin</span>
+        </div>
+        <div class="ba-half">
+          <img loading="lazy" src="img/r-after.webp" alt="Skrabdan keyin: silliq, tekis teri" width="1080" height="740">
+          <span class="ba-label">Keyin</span>
+        </div>
+        <figcaption>Tana skrabi — bir xil joy, muntazam ishlatishdan oldin va keyin</figcaption>
+      </figure>
+      <div class="shots reveal-group">
+        <figure class="shot reveal">
+          <div class="shot-img"><video class="clip" muted playsinline loop preload="none" poster="img/v-scrub-poster.webp" data-src="img/v-scrub.mp4" aria-label="Shakarli skrab teriga surtilmoqda" width="540" height="960"></video></div>
+          <figcaption><strong>Skrab</strong>Shakar kristallari o‘lik hujayralarni yumshoq olib tashlaydi.</figcaption>
+        </figure>
+        <figure class="shot reveal" style="transition-delay:.08s">
+          <div class="shot-img"><video class="clip" muted playsinline loop preload="none" poster="img/v-bath-poster.webp" data-src="img/v-bath.mp4" aria-label="Skrab bankasi vannada, ko‘pik ichida" width="480" height="854"></video></div>
+          <figcaption><strong>Vannada</strong>Haftada <span style="white-space:nowrap">2–3 marta</span>, nam teriga <span style="white-space:nowrap">2–3 daqiqa</span> massaj.</figcaption>
+        </figure>
+        <figure class="shot reveal" style="transition-delay:.16s">
+          <div class="shot-img"><video class="clip" muted playsinline loop preload="none" poster="img/v-gel-poster.webp" data-src="img/v-gel.mp4" aria-label="Kami Love yuvinish geli" width="540" height="960"></video></div>
+          <figcaption><strong>Gel</strong>Yumshoq ko‘pik — ertalab va kechqurun yuz uchun.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <p class="swipe-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14M13 7l5 5-5 5"/></svg>Suratlarni chapga suring</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Buyurtma qanday beriladi</h2>
+      <p>Uch qadam. Siz faqat birinchisini qilasiz.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div><h3>Ism va raqamingizni yozasiz</h3><p>Pastdagi formani to‘ldirish bir daqiqa oladi.</p></div>
+      </div>
+      <div class="step">
+        <div><h3>Operator qo‘ng‘iroq qiladi</h3><p>Buyurtmani va skrab hidini tasdiqlaydi, savollarga javob beradi.</p></div>
+      </div>
+      <div class="step">
+        <div><h3>2–4 kunda qo‘lingizda</h3><p>BTS pochtasi orqali O‘zbekistonning istalgan nuqtasiga yetkazamiz.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="order" id="order">
+  <div class="wrap">
+    <div class="order-photo reveal"><img loading="lazy" src="img/hero-s.webp" alt="Kami Love geli bilan"></div>
+    <div class="order-card" id="card">
+      <form id="form" novalidate>
+        <input type="hidden" name="product" value="Enzim pudra + Skrab + Gel (290 000)">
+        <div style="display:grid;gap:22px">
+          <div>
+            <h2 style="font-size:28px">Buyurtma berish</h2>
+            <p class="muted" style="margin-top:6px">Formani to‘ldiring — qolganini operator hal qiladi.</p>
+            <div class="order-thumbs" aria-hidden="true">
+              <span><img src="img/p-papaya.webp" alt="" width="580" height="1200"></span><span><img src="img/p-cherry.webp" alt="" width="1100" height="926"></span><span><img src="img/p-gel.webp" alt="" width="636" height="1200"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="name">Ismingiz</label>
+            <input type="text" id="name" name="name" placeholder="Masalan, Nilufar" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="tel">Telefon raqamingiz</label>
+            <input type="tel" id="tel" name="phone" placeholder="+998 __ ___ __ __" inputmode="tel" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <div class="scent-head">
+              <span style="font-size:15px;font-weight:500">Skrab hidi</span>
+              <div class="scent-pic" aria-hidden="true">
+                <img data-scent="olcha" src="img/p-cherry.webp" alt="" width="1100" height="926" class="on">
+                <img data-scent="kokos" src="img/p-coconut.webp" alt="" width="900" height="742">
+                <img data-scent="sitrus" src="img/p-citrus.webp" alt="" width="900" height="900">
+              </div>
+            </div>
+            <div class="chips" role="radiogroup" aria-label="Skrab hidi">
+              <label class="chip"><input type="radio" name="scent" value="Olcha" data-img="olcha" checked><span>Olcha</span></label>
+              <label class="chip"><input type="radio" name="scent" value="Kokos" data-img="kokos"><span>Kokos</span></label>
+              <label class="chip"><input type="radio" name="scent" value="Sitrus" data-img="sitrus"><span>Sitrus</span></label>
+            </div>
+          </div>
+          <div class="order-price">
+            <span class="now">290 000 so‘m</span>
+            <span class="was">3 ta mahsulot · <s>480 000</s></span>
+          </div>
+          <button class="btn" type="submit" style="width:100%">Buyurtma berish</button>
+          <p class="fine">To‘lov — mahsulotni qo‘lga olganda. Operator 15 daqiqa ichida qo‘ng‘iroq qiladi.</p>
+        </div>
+      </form>
+      <div class="done">
+        <svg class="check" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M15 25l6 6 12-13"/></svg>
+        <h3>Rahmat, buyurtma qabul qilindi</h3>
+        <p class="muted">Tez orada <strong id="done-tel"></strong> raqamiga qo‘ng‘iroq qilamiz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand"><span class="brand">Kami <span>Love</span></span><span class="tagline" style="display:inline">yuz va tana parvarishi</span></div>
+    <span>Savollar bo‘lsa: <a href="tel:+998905004656" style="color:var(--ink);font-weight:500">+998 90 500 46 56</a></span>
+    <span>© 2026 Kami Love</span>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <div class="p">290 000 so‘m<small>3 ta mahsulot · gel sovg‘a</small></div>
+  <a class="btn" href="#order">Buyurtma berish</a>
+</div>
+
+<script>
+(function(){
+  var tel=document.getElementById('tel');
+  tel.addEventListener('focus',function(){ if(!tel.value) tel.value='+998 '; });
+  tel.addEventListener('input',function(){
+    var d=tel.value.replace(/\D/g,'');
+    if(d.indexOf('998')!==0) d='998'+d.replace(/^998/,'');
+    d=d.slice(0,12);
+    var out='+998';
+    var rest=d.slice(3);
+    if(rest.length>0) out+=' '+rest.slice(0,2);
+    if(rest.length>2) out+=' '+rest.slice(2,5);
+    if(rest.length>5) out+=' '+rest.slice(5,7);
+    if(rest.length>7) out+=' '+rest.slice(7,9);
+    tel.value=out;
+  });
+
+  var pics=document.querySelectorAll('.scent-pic img'), stageSkrab=document.getElementById('stage-skrab');
+  document.querySelectorAll('input[name=scent]').forEach(function(r){
+    r.addEventListener('change',function(){
+      pics.forEach(function(im){ im.classList.toggle('on', im.getAttribute('data-scent')===r.getAttribute('data-img')); });
+    });
+  });
+  var form=document.getElementById('form');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('name');
+    var digits=tel.value.replace(/\D/g,'');
+    if(!name.value.trim()){ name.focus(); return; }
+    if(digits.length<12){ tel.focus(); return; }
+    document.getElementById('done-tel').textContent=tel.value;
+    document.getElementById('card').classList.add('is-done');
+    document.getElementById('bar').classList.remove('show');
+    window.__lastOrder={name:name.value.trim(),phone:'+'+digits,scent:(form.querySelector('input[name=scent]:checked')||{}).value};
+  });
+
+  // short clips: load when near, play only while on screen, never with sound
+  var clips=document.querySelectorAll('video.clip'), calm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function clipSrc(v){
+    if(v.getAttribute('src')) return Promise.resolve();
+    var u=v.getAttribute('data-src');
+    if(u&&u.indexOf('data:')!==0){ v.src=u; return Promise.resolve(); }
+    var key=v.getAttribute('data-v'); var d=u||(window.__VID&&window.__VID[key]);
+    if(!d) return Promise.resolve();
+    return fetch(d).then(function(r){return r.blob();}).then(function(b){ v.src=URL.createObjectURL(b); });
+  }
+  if(clips.length){
+    if('IntersectionObserver' in window){
+      var co=new IntersectionObserver(function(es){ es.forEach(function(e){
+        var v=e.target;
+        if(e.isIntersecting){ clipSrc(v).then(function(){ if(!calm){ var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){}); } }); }
+        else if(!v.paused){ v.pause(); }
+      }); },{threshold:.35,rootMargin:'120px 0px'});
+      clips.forEach(function(v){ co.observe(v); });
+    } else { clips.forEach(function(v){ clipSrc(v).then(function(){ if(!calm) v.play().catch(function(){}); }); }); }
+  }
+
+  var rv=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); } }); },{threshold:.18,rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el){ if(!el.closest('.reveal-group')) ro.observe(el); });
+    // safety net: if the observer never fires (odd embeds), reveal anything that is on screen
+    var sweep=function(){ var h=window.innerHeight||800; rv.forEach(function(el){ if(!el.classList.contains('in')&&el.getBoundingClientRect().top<h*1.05) el.classList.add('in'); }); };
+    window.addEventListener('scroll',sweep,{passive:true}); window.addEventListener('resize',sweep); setTimeout(sweep,1200);
+    var rg=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.querySelectorAll('.reveal').forEach(function(c){ c.classList.add('in'); }); rg.unobserve(e.target); } }); },{threshold:.1});
+    document.querySelectorAll('.reveal-group').forEach(function(g){ rg.observe(g); });
+  } else { rv.forEach(function(el){ el.classList.add('in'); }); }
+
+  var bar=document.getElementById('bar'), order=document.getElementById('order'), heroBtn=document.querySelector('.hero .btn');
+  var heroGone=false, orderVisible=false;
+  function sync(){ bar.classList.toggle('show', heroGone && !orderVisible && !document.getElementById('card').classList.contains('is-done')); }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ heroGone=!es[0].isIntersecting; sync(); }).observe(heroBtn);
+    new IntersectionObserver(function(es){ orderVisible=es[0].isIntersecting; sync(); },{threshold:.15}).observe(order);
+  }
+})();
+</script>
+</body>
+</html>
