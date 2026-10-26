@@ -18,6 +18,7 @@ Jonli koʻrinish: https://forwork7002.github.io/kamilove/ — bosh sahifada 4 va
 | `v12/` | Katta rasm | chapda katta mahsulot rasmi, oʻngda forma, savol-javob |
 | `v13/` | Kupon | qora-oq, punktir ramkalar, narx jadvali |
 | `v14/` | Premium minimal | qatlamli hero, oldin/keyin, video, hid tanlash |
+| `v15/` | Oq do‘kon — 5 mahsulot | beshta mahsulot alohida narxi bilan + 290 000 to‘plam, savat, Young Serif/Onest |
 
 Har bir variant — bitta `index.html` (HTML + CSS + JS, build kerak emas). Umumiy fayllar ildizda:
 `img/` (rasmlar, webp), `reels/` (videolar), `previews/` (bosh sahifa uchun skrinshotlar).
@@ -55,3 +56,10 @@ telefon uchun kichik nusxalari `p-*-s.webp`, `hero-s.webp`. Videolar H.264 mp4, 
 ## v5–v14 (Enzim pudra 290 000)
 
 Bitta taklif: Papaya enzim pudra + tana skrabi (mijoz hidini tanlaydi) + yuvinish geli sovgʻa. Narx `index.html` dagi SOZLAMALAR blokida (`PRICE`). Buyurtma `/api/order` ga `items` (pudra, skrab) va `gift` (gel) bilan, `site: 'KAMILOVE ENZIM 290'` belgisi bilan ketadi (v14: `'KAMILOVE ENZIM 290 v14'`).
+
+## v15 (5 ta mahsulot + to‘plam, savat)
+
+Mahsulotlar: Papaya enzim pudra 70 g, Skrab Olcha 250 g, Skrab Kokos 250 g, Yuvinish geli 300 ml, Tana kremi Vanilla 200 ml — har biri alohida narxi bilan,
+plus to‘plam (pudra + skrab + gel sovg‘a). Narxlar `v15/index.html` dagi SOZLAMALAR blokida (`PRODUCTS[].price`, `SET_PRICE`, `SET_DEFAULT`).
+Forma `/api/order` ga o‘sha formatda yuboradi (`items` — har mahsulot `qty` va `price` bilan, `gift`, `bonus`, `name`, `phone`, `total`, `sum`, `site: 'KAMILOVE SHOP v15'`, `page`, `utm`, `hp`).
+Rasmlar `v15/img/` ichida (webp + mp4), tashqi fayllarga bog‘liq emas; `*.github.io` da ko‘rish nusxasi rejimi.
