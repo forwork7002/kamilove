@@ -535,17 +535,49 @@ footer .wrap{display:flex;justify-content:space-between;align-items:baseline;gap
       pics.forEach(function(im){ im.classList.toggle('on', im.getAttribute('data-scent')===r.getAttribute('data-img')); });
     });
   });
-  var form=document.getElementById('form');
+  // the other variants' order format (server.js: items + gift); GitHub Pages has no server — a preview only
+  var SITE_TAG='KAMILOVE ENZIM 290 v14', PRICE=290000, PHONE_TXT='+998 90 500 46 56';
+  var SCRUBS={Olcha:['cherry','Body Scrub Cherry (250 g)'],Kokos:['coconut','Body Scrub Coconut (250 g)'],Sitrus:['citrus','Body Scrub Citrus (250 ml)']};
+  var DEMO=/\.github\.io$/.test(location.hostname)||location.protocol==='file:';
+  if(DEMO) document.body.insertAdjacentHTML('afterbegin',
+    '<div style="background:#222;color:#fff;text-align:center;font:600 14px/1.4 Arial,sans-serif;padding:8px 12px">Koʻrish nusxasi: bu sahifadan buyurtma yuborilmaydi</div>');
+  function sendOrder(data){
+    if(DEMO) return new Promise(function(r){ setTimeout(function(){ r(true); },600); });
+    var utm={};
+    try{ new URLSearchParams(location.search).forEach(function(v,k){ k=k.toLowerCase(); if(k.indexOf('utm_')===0) utm[k]=v; }); }catch(e){}
+    var ac=new AbortController(), t=setTimeout(function(){ ac.abort(); },15000);
+    data.site=SITE_TAG; data.page=location.href; data.utm=utm; data.hp='';
+    return fetch('/api/order',{method:'POST',headers:{'Content-Type':'application/json'},signal:ac.signal,body:JSON.stringify(data)})
+      .then(function(r){ if(!r.ok) throw new Error('server'); return r.json().catch(function(){ return {}; }); })
+      .then(function(j){ return !!j && j.ok!==false; })
+      .finally(function(){ clearTimeout(t); });
+  }
+  var form=document.getElementById('form'), sending=false, btn=form.querySelector('button[type=submit]');
+  var err=document.createElement('p'); err.className='fine'; err.setAttribute('role','alert'); err.style.color='var(--rose)';
+  btn.insertAdjacentElement('afterend',err);
   form.addEventListener('submit',function(e){
     e.preventDefault();
+    if(sending) return;
+    err.textContent='';
     var name=document.getElementById('name');
     var digits=tel.value.replace(/\D/g,'');
     if(!name.value.trim()){ name.focus(); return; }
     if(digits.length<12){ tel.focus(); return; }
-    document.getElementById('done-tel').textContent=tel.value;
-    document.getElementById('card').classList.add('is-done');
-    document.getElementById('bar').classList.remove('show');
-    window.__lastOrder={name:name.value.trim(),phone:'+'+digits,scent:(form.querySelector('input[name=scent]:checked')||{}).value};
+    var scent=SCRUBS[(form.querySelector('input[name=scent]:checked')||{}).value]||SCRUBS.Olcha;
+    var data={
+      items:[{id:'papaya',name:'Papaya Enzyme Powder Cleanser (70 g) — 1 ta'},{id:scent[0],name:scent[1]+' — 1 ta'}],
+      gift:{id:'gel',name:'Gentle Foaming Cleansing Gel (300 ml) — 1 ta'},
+      bonus:1, name:name.value.trim(), phone:tel.value.trim(),
+      total:PRICE.toLocaleString('ru-RU').replace(/\s/g,' ')+' soʻm', sum:PRICE
+    };
+    sending=true; btn.disabled=true; btn.textContent='Yuborilmoqda…';
+    sendOrder(data).catch(function(){ return false; }).then(function(ok){
+      sending=false; btn.disabled=false; btn.textContent='Buyurtma berish';
+      if(!ok){ err.textContent='Buyurtma yuborilmadi — internetni tekshirib, qayta bosing. Yoki qoʻngʻiroq qiling: '+PHONE_TXT; return; }
+      document.getElementById('done-tel').textContent=tel.value;
+      document.getElementById('card').classList.add('is-done');
+      document.getElementById('bar').classList.remove('show');
+    });
   });
 
   // short clips: load when near, play only while on screen, never with sound

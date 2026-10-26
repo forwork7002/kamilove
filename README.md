@@ -17,6 +17,7 @@ Jonli koʻrinish: https://forwork7002.github.io/kamilove/ — bosh sahifada 4 va
 | `v11/` | Bir ustun | kompyuterda ham tor ustun, oq + toʻq sariq |
 | `v12/` | Katta rasm | chapda katta mahsulot rasmi, oʻngda forma, savol-javob |
 | `v13/` | Kupon | qora-oq, punktir ramkalar, narx jadvali |
+| `v14/` | Premium minimal | qatlamli hero, oldin/keyin, video, hid tanlash |
 
 Har bir variant — bitta `index.html` (HTML + CSS + JS, build kerak emas). Umumiy fayllar ildizda:
 `img/` (rasmlar, webp), `reels/` (videolar), `previews/` (bosh sahifa uchun skrinshotlar).
@@ -51,6 +52,6 @@ Haqiqiy buyurtma olish uchun tanlangan variantni `server.js` bor serverga qoʻyi
 Manba: `IMG_.zip`. Rasmlar webp ga oʻtkazilgan, mahsulot rasmlarining foni shaffof (`p-*.webp`),
 telefon uchun kichik nusxalari `p-*-s.webp`, `hero-s.webp`. Videolar H.264 mp4, 576×1024.
 
-## v5–v13 (Enzim pudra 290 000)
+## v5–v14 (Enzim pudra 290 000)
 
-Bitta taklif: Papaya enzim pudra + tana skrabi (mijoz hidini tanlaydi) + yuvinish geli sovgʻa. Narx `index.html` dagi SOZLAMALAR blokida (`PRICE`). Buyurtma `/api/order` ga `items` (pudra, skrab) va `gift` (gel) bilan, `site: 'KAMILOVE ENZIM 290'` belgisi bilan ketadi.
+Bitta taklif: Papaya enzim pudra + tana skrabi (mijoz hidini tanlaydi) + yuvinish geli sovgʻa. Narx `index.html` dagi SOZLAMALAR blokida (`PRICE`). Buyurtma `/api/order` ga `items` (pudra, skrab) va `gift` (gel) bilan, `site: 'KAMILOVE ENZIM 290'` belgisi bilan ketadi (v14: `'KAMILOVE ENZIM 290 v14'`).
